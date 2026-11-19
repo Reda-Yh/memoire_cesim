@@ -1,0 +1,352 @@
+{
+  "portal_url": "https://bordeaux-inp.cesim.com/",
+  "school": "Bordeaux INP",
+  "simulation_name": "Cesim Global Challenge Automotive w/ ESG",
+  "session_code": "ESYBIA2AS",
+  "universe": 1,
+  "instructor": "Eric Astien",
+  "team_name": "IronHorse",
+  "former_team_name": "Bleu",
+  "members": [
+    "Reda Yahya",
+    "Mohamed Ajaji",
+    "Nour Doghmi",
+    "Yahya Bel Hajjam"
+  ],
+  "grading_system": "21 criteres Eric Astien (1 + NB.SI sur 1-12 pts + Certification ESG 0/2/4/6 pts)",
+  "total_rounds": 10,
+  "last_official_pdf_round": 3,
+  "last_closed_round": 4,
+  "next_round": 5,
+  "next_deadline": "2026-11-19 15:50 CET",
+  "general_rank_official_t3": 1,
+  "general_points_official_t3": 374,
+  "general_points_estimated_t4": 502,
+  "logged_rounds": [
+    {
+      "round_name": "Periode Test",
+      "round_number": 0,
+      "criteria_count": 15,
+      "points": 122,
+      "round_rank": 2,
+      "net_profit_m_usd": 8751,
+      "ending_stocks_k": 0,
+      "unfulfilled_demand_k": 23,
+      "overdraft_m_usd": 0,
+      "notes": "Hors cumul officiel ; 2e derriere Ca Roule (123 pts)."
+    },
+    {
+      "round_name": "Tour 1",
+      "round_number": 1,
+      "criteria_count": 15,
+      "points": 96,
+      "cumulative_points": 96,
+      "round_rank": 8,
+      "general_rank": 8,
+      "ending_stocks_k": 371,
+      "unfulfilled_demand_k": 0,
+      "overdraft_m_usd": 2758,
+      "overdraft_html_m_usd": 3623,
+      "plants_usa": 7,
+      "plants_china": 2,
+      "notes": "Surproduction (371 k stock = 2 pts) et decouvert Chine ayant degrade l'Independance financiere (4 pts). Achat +1 usine USA et +1 usine Chine."
+    },
+    {
+      "round_name": "Tour 2",
+      "round_number": 2,
+      "criteria_count": 17,
+      "points": 156,
+      "cumulative_points": 252,
+      "round_rank": 1,
+      "general_rank": 1,
+      "net_profit_m_usd": 10774,
+      "roe_pct": 48.61,
+      "equity_ratio_pct": 74.66,
+      "independance_financiere_pdf_pct": 77.72,
+      "ending_stocks_k": 0,
+      "unfulfilled_demand_k": 35,
+      "overdraft_m_usd": 0,
+      "rd_productivity": 1.085,
+      "ddrs_fournisseurs": 6.67,
+      "plants_usa": 8,
+      "plants_china": 3,
+      "notes": "#1 du Tour (156 pts) et #1 General (252 pts), #1 Resultat net (10 774 M$), 0 stock (11 pts), 0 decouvert (9 pts), #1 Productivite (12 pts)."
+    },
+    {
+      "round_name": "Tour 3",
+      "round_number": 3,
+      "criteria_count": 21,
+      "points": 122,
+      "cumulative_points": 374,
+      "round_rank": 7,
+      "general_rank": 1,
+      "net_profit_m_usd": 9560,
+      "roe_pct": 29.57,
+      "independance_financiere_pdf_pct": 88.34,
+      "ending_stocks_k": 379,
+      "unfulfilled_demand_k": 365,
+      "overdraft_m_usd": 0,
+      "rd_productivity": 1.1211,
+      "ddrs_fournisseurs": 4.67,
+      "esg_env": 2.89,
+      "esg_soc": 3.98,
+      "esg_gov": 2.98,
+      "certification": "Bronze",
+      "plants_usa": 8,
+      "plants_china": 3,
+      "plants_ordered_t5": {
+        "usa": 1,
+        "china": 3,
+        "total_cap_t5_k": 3300
+      },
+      "notes": "#1 General officiel (374 pts). #1 Impact Societal (3.98 = 12 pts), 0 decouvert (5 pts). Points perdus sur Composants Colossaux 1*/1*, 30% renouvelable, 379k stocks et 365k ruptures Hybrides."
+    },
+    {
+      "round_name": "Tour 4",
+      "round_number": 4,
+      "criteria_count": 21,
+      "estimated_points": 128,
+      "estimated_cumulative_points": 502,
+      "estimated_round_rank": 7,
+      "revenue_m_usd": 58820,
+      "ebit_m_usd": 14176,
+      "net_profit_m_usd": 11644,
+      "roe_pct": 27.12,
+      "value_creation_m_usd": 53152,
+      "independance_financiere_pct": 100.0,
+      "credit_rating": "AAA",
+      "cash_m_usd": 32989,
+      "lt_debt_m_usd": 0,
+      "overdraft_m_usd": 0,
+      "operating_margin_pct": {
+        "usa": 8.05,
+        "china": 16.35,
+        "europe": 33.25
+      },
+      "ending_stocks_k": 186,
+      "unfulfilled_demand_k": 78,
+      "rd_engineers": 6400,
+      "rd_productivity": 1.141,
+      "ddrs_fournisseurs": 5.67,
+      "esg_env": 2.87,
+      "esg_soc": 3.1,
+      "esg_gov": 2.61,
+      "certification": "Argent",
+      "plants_usa": 8,
+      "plants_china": 3,
+      "notes": "0 dette LT (100% Indep. Fin. AAA), 0 decouvert, Argent (4/4 pts), Marge US redressee a +8.05% (8 pts via PCI=1.20). Points perdus sur Composants Colossaux (seule equipe sur 12 -> DDRS 5.67 = 1/7 pts et -6.1% demande), Recyclabilite abaissee (-1.5%), CO2/Eau non coches (-4.9%) et USA L1=38%."
+    }
+  ],
+  "tour_5_context": {
+    "status": "live_until_2026-11-19T15:50:00+01:00",
+    "source_files": [
+      "memoire_agent_cesim/06_conditions_marche_et_evenements/tour_05_conditions_marche.html",
+      "memoire_agent_cesim/06_conditions_marche_et_evenements/tour_05_evenements.html",
+      "memoire_agent_cesim/10_messages_prof/01_messages_instructeur_ESYBIA2AS_tours_1_a_5.md"
+    ],
+    "new_official_announcements": [
+      "Ouverture officielle de la commercialisation / R&D Hydrogene vert (Tour 5 - 2033)",
+      "COP 32 : interdiction definitive des moteurs 100% thermiques a partir de 2035 (Tour 7) -> Tour 6 = dernier tour du Thermique pur",
+      "Accord libre-echange Chine -> Europe reduisant les droits de douane de 10% a 7%",
+      "Dividendes et Augmentation de capital ouverts en Finance"
+    ],
+    "events_tour_5": [
+      "Le proces de la transparence (Aucune divulgation / Transparence selective / Transparence totale)",
+      "Negociations sur les batteries (Conserver actuelles / Sous traiter / Co-developper)"
+    ],
+    "macro_parameters": {
+      "europe_demand_note": "Croissance globale Europe -2%, reste le plus grand marche ; conteneurs Hydrogene defectueux temporairement (ancien modele plus couteux au T5, expansion infra Europe)",
+      "batteries_cost_note": "Nouveaux gisements de matières premieres batteries + R&D batteries solides -> baisse des couts Hybride et Electrique",
+      "fx_usd": {
+        "eur": 1.2703,
+        "rmb": 0.1419
+      },
+      "corporate_tax_pct": {
+        "usa": 20.0,
+        "china": 24.0,
+        "europe": 21.0
+      },
+      "cash_interest_pct": {
+        "usa": 3.2,
+        "china": 4.2,
+        "europe": 1.0
+      },
+      "ad_valorem_tariffs_pct": {
+        "usa_to_china": 23.0,
+        "usa_to_europe": 13.0,
+        "china_to_usa": 6.0,
+        "china_to_europe": 7.0
+      },
+      "hr_recruitment_cost_k_usd": 8.4,
+      "admin_china_k_usd": {
+        "fixed": 65000,
+        "per_plant": 10000
+      },
+      "share_nominal_usd": 2.0,
+      "shares_count": 1625000000,
+      "wacc_pct": 9.0,
+      "rd_engineers_t5": 6400,
+      "us_parent_cash_t4_m_usd": 14495,
+      "finance_parent_note": "Dividendes et Augmentation de capital s'imputent sur le Bilan USA (EU = Etats-Unis, maison mere, Capital social 3 250 M$)"
+    },
+    "ironhorse_plants_t5": {
+      "usa": 9,
+      "china": 6,
+      "total_capacity_k": 3300
+    }
+  },
+  "competitor_standings_after_t4": [
+    {
+      "team": "IronHorse",
+      "cumul_t1_t3": 374,
+      "t4_est_points": 128,
+      "cumul_est_t1_t4": 502,
+      "t4_net_m_usd": 11644,
+      "cap_t5_k": 3300,
+      "cap_t6_k": 3300,
+      "t4_stocks_k": 186,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "GT-Automobile VI",
+      "cumul_t1_t3": 355,
+      "t4_est_points": 143,
+      "cumul_est_t1_t4": 498,
+      "t4_net_m_usd": 13416,
+      "cap_t5_k": 2900,
+      "cap_t6_k": 2900,
+      "t4_stocks_k": 216,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "Ren'Auto",
+      "cumul_t1_t3": 368,
+      "t4_est_points": 127,
+      "cumul_est_t1_t4": 495,
+      "t4_net_m_usd": 14286,
+      "cap_t5_k": 7050,
+      "cap_t6_k": 8850,
+      "t4_stocks_k": 635,
+      "t4_overdraft_m_usd": 13249
+    },
+    {
+      "team": "YANAUTO",
+      "cumul_t1_t3": 356,
+      "t4_est_points": 129,
+      "cumul_est_t1_t4": 485,
+      "t4_net_m_usd": 12503,
+      "cap_t5_k": 2850,
+      "cap_t6_k": 2850,
+      "t4_stocks_k": 0,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "Vrooom Vroooom",
+      "cumul_t1_t3": 325,
+      "t4_est_points": 153,
+      "cumul_est_t1_t4": 478,
+      "t4_net_m_usd": 11748,
+      "cap_t5_k": 2350,
+      "cap_t6_k": 2850,
+      "t4_stocks_k": 0,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "POLRAMOS",
+      "cumul_t1_t3": 366,
+      "t4_est_points": 108,
+      "cumul_est_t1_t4": 474,
+      "t4_net_m_usd": 10173,
+      "cap_t5_k": 3450,
+      "cap_t6_k": 3450,
+      "t4_stocks_k": 642,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "TABCHOUR AUTO",
+      "cumul_t1_t3": 324,
+      "t4_est_points": 143,
+      "cumul_est_t1_t4": 467,
+      "t4_net_m_usd": 14164,
+      "cap_t5_k": 2350,
+      "cap_t6_k": 2350,
+      "t4_stocks_k": 37,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "BM2P - BMDoublePied",
+      "cumul_t1_t3": 371,
+      "t4_est_points": 92,
+      "cumul_est_t1_t4": 463,
+      "t4_net_m_usd": 9035,
+      "cap_t5_k": 3400,
+      "cap_t6_k": 3650,
+      "t4_stocks_k": 678,
+      "t4_overdraft_m_usd": 787
+    },
+    {
+      "team": "Ça Roule",
+      "cumul_t1_t3": 331,
+      "t4_est_points": 106,
+      "cumul_est_t1_t4": 437,
+      "t4_net_m_usd": 3066,
+      "cap_t5_k": 3300,
+      "cap_t6_k": 3300,
+      "t4_stocks_k": 609,
+      "t4_overdraft_m_usd": 4755
+    },
+    {
+      "team": "AURA",
+      "cumul_t1_t3": 300,
+      "t4_est_points": 129,
+      "cumul_est_t1_t4": 429,
+      "t4_net_m_usd": 9979,
+      "cap_t5_k": 2350,
+      "cap_t6_k": 2350,
+      "t4_stocks_k": 0,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "tomobil",
+      "cumul_t1_t3": 216,
+      "t4_est_points": 129,
+      "cumul_est_t1_t4": 345,
+      "t4_net_m_usd": 11283,
+      "cap_t5_k": 3050,
+      "cap_t6_k": 3050,
+      "t4_stocks_k": 268,
+      "t4_overdraft_m_usd": 0
+    },
+    {
+      "team": "MO'THOR",
+      "cumul_t1_t3": 219,
+      "t4_est_points": 97,
+      "cumul_est_t1_t4": 316,
+      "t4_net_m_usd": 3589,
+      "cap_t5_k": 2700,
+      "cap_t6_k": 2950,
+      "t4_stocks_k": 380,
+      "t4_overdraft_m_usd": 0
+    }
+  ],
+  "critical_game_alerts": {
+    "tour_5_hydrogen_launch": {
+      "source": "memoire_agent_cesim/10_messages_prof/01_messages_instructeur_ESYBIA2AS_tours_1_a_5.md",
+      "message": "OFFICIEL Tour 5 (2033) : Ouverture de la commercialisation et R&D Hydrogene vert. Conteneurs defectueux temporairement au T5 (cout plus eleve au T5, infrastructures en hausse Europe)."
+    },
+    "tour_7_cop32_thermal_ban": {
+      "source": "memoire_agent_cesim/10_messages_prof/01_messages_instructeur_ESYBIA2AS_tours_1_a_5.md",
+      "message": "OFFICIEL Tour 5 (COP 32) : interdiction definitive des moteurs 100% thermiques a partir de 2035 (Tour 7). Tour 6 (2034) = derniere annee du Thermique pur (finir avec 0 k stock Thermique fin T6 !). L'Hybride reste autorise avec Electrique et Hydrogene."
+    },
+    "licensing_between_teams_bug": {
+      "source": "memoire_agent_cesim/08_manuels_et_planning/04_regles_ventes_licences_entre_equipes.pdf",
+      "message": "Interdit d'acheter une techno a une autre equipe ET de la developper en interne (ou d'acheter une licence Cesim) au meme tour : la case se reinitialise silencieusement."
+    },
+    "offline_deliverables": {
+      "flyer_pdf_vertical": "2026-11-19 17:00 (presentation verticale obligatoire : nom IronHorse + slogan)",
+      "quiz_individuel": "2026-11-20 09:00-10:00 (ou 13h00 selon planning PDF)",
+      "video_1min_facultative": "2026-11-20 14:00",
+      "questionnaire_equipe": "2026-11-20 23:59 (modele dans menu document)"
+    }
+  }
+}
