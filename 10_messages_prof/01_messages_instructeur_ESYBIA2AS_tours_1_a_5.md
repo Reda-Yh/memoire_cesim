@@ -1,3 +1,98 @@
+TOUR 6 : 
+
+Nouveau MESSAGE IMPORTANT DE L'AMF
+
+
+Après une période de ralentissement de l'activité des marchés financiers, ayant eu pour conséquence d'interdire les augmentations de capital, celles- ci sont à nouveaux autorisées. L'instructeur
+
+
+
+Nouveau RÉSULTATS ANNÉE 5
+Accès aux résultats et classement de l'année 5. Ci-dessous un rapide diagnostic
+
+
+
+L'instructeur
+
+
+
+Voici le diagnostic détaillé de la situation économique, opérationnelle et financière de chacune des 12 entreprises à l'issue du Tour 5.
+
+1. Ren'Auto — Leader incontesté en valeur et en volume
+Performance financière : Chiffre d'affaires record de 136,93 Mrd USD et résultat net de 24,21 Mrd USD, hissant le cours de l'action à 254,15 USD (capitalisation de 413 Mrd USD). Le ROS est solide (17,68 %) et le ROE atteint 32,18 %.
+Positionnement & Marché : Leader mondial en parts de marché globales (10,79 %). L'entreprise domine le segment Hybride (16,99 % PDM globale) et réalise une percée majeure sur l'Électrique en Chine (35,20 % de PDM locale).
+Opérations & Logistique : Forte intégration de la production interne (14 usines aux USA, 17 en Chine, avec de nouvelles usines en construction). Recours quasi nul à la sous-traitance (155 M USD).
+Points d'attention : Accumulation de stocks valorisés à 12,18 Mrd USD en Chine (188 718 hybrides et 158 147 électriques invendus), générant des frais de stockage élevés (319 M USD). La R&D et la pub sont très soutenues (12 Mrd USD de publicité).
+Santé financière & RSE : Bilan très sain (96,20 % de fonds propres, trésorerie de 35,19 Mrd USD, notation AAA). Meilleur score ESG du marché (3,54).
+2. AURA — Gestion des flux tendus mais sous-capacité chronique
+Performance financière : CA de 75,70 Mrd USD et résultat net de 12,62 Mrd USD. Rentabilité équilibrée (ROS 16,67 %, ROCE 34,08 %), cours de l'action à 144,51 USD.
+Positionnement & Marché : Présence équilibrée en Thermique (8,77 %) et Hybride (8,32 %), mais absence totale des technologies de rupture (Électrique et Hydrogène).
+Opérations & Logistique : Gestion remarquable des stocks (0 USD de stock résiduel). En contrepartie, l'entreprise souffre d'un sous-dimensionnement industriel : d'importantes demandes insatisfaites ont été constatées (150 000 thermiques en Europe, 113 000 hybrides aux USA, 148 000 hybrides en Chine).
+Santé financière & RSE : Excellente trésorerie (40,50 Mrd USD), endettement nul, notation AAA. Score ESG modéré (2,90) pénalisé par des démissions en R&D (4,5 % de turnover) et un budget formation réduit.
+3. IronHorse — Champion de la rentabilité opérationnelle (Pure Player Hybride/Thermique)
+Performance financière : Modèle axé sur la marge unitaire plutôt que le volume. Même avec un CA plus modeste (63,63 Mrd USD), l'entreprise dégage 16,63 Mrd USD de bénéfice net. Elle affiche les meilleures marges opérationnelles du secteur : marge sur coûts directs de 39,50 %, EBITDA de 33,76 % et ROS de 26,13 %. Cours de l'action à 163,57 USD.
+Positionnement & Marché : PDM globale de 8,26 %, concentrée sur le Thermique et l'Hybride. L'entreprise ne s'est pas lancée dans l'Électrique.
+Opérations & Logistique : Recours massif et maîtrisé à la sous-traitance en Chine (9,10 Mrd USD) et aux USA (4,37 Mrd USD). Stocks quasi nuls (293 M USD).
+Santé financière & RSE : Situation bilancielle d'une solidité exemplaire : 44,03 Mrd USD de trésorerie (la plus élevée du marché), aucune dette, notation AAA. Dividendes versés de 8 Mrd USD.
+4. YANAUTO — Solide généraliste à forte rentabilité
+Performance financière : Deuxième capitalisation boursière du marché (283,47 Mrd USD, cours à 174,44 USD). CA de 81,30 Mrd USD pour un bénéfice net de 16,66 Mrd USD (ROS de 20,49 % et ROE de 31,63 %).
+Positionnement & Marché : 9,09 % de PDM globale, avec une pénétration très forte sur le Thermique en Chine (14,65 % de PDM) et une présence solide en Hybride.
+Opérations & Logistique : Capacités chinoises exploitées à 100 % en interne couplées à une sous-traitance importante. Cependant, un surplus de production thermique est resté en stock en Chine (421 468 unités, stock total de 4,71 Mrd USD).
+Santé financière & RSE : Trésorerie de 38,06 Mrd USD, notation AAA, distribution de 15 Mrd USD de dividendes. Score de gouvernance perfectible (2,16).
+5. tomobil — Efficacité maximale du capital investi
+Performance financière : CA de 73,99 Mrd USD et résultat net de 18,20 Mrd USD (2e plus gros profit net). L'entreprise affiche la meilleure rentabilité des capitaux du marché : ROCE de 52,59 % et ROE de 49,92 %, avec un ROS élevé de 24,60 %.
+Positionnement & Marché : PDM globale de 8,31 %, répartie entre Thermique (8,88 %) et Hybride (8,32 %). Aucune diversification sur les technologies alternatives.
+Opérations & Logistique : Ajustement logistique précis, stocks résiduels très faibles (1,05 Mrd USD). Forte maîtrise des coûts de fabrication et des équipements.
+Santé financière & RSE : Structure financière saine malgré un recours mesuré à la dette long terme (4,40 Mrd USD), compensé par 37,10 Mrd USD de trésorerie. Notation AAA.
+6. GT-Automobile VI — Volumes élevés mais marges comprimées et opportunités manquées
+Performance financière : CA de 71,97 Mrd USD pour un bénéfice net de 10,86 Mrd USD. La rentabilité est en retrait par rapport aux pairs : marge sur coûts directs de 24,41 % (la plus basse du secteur hors POLRAMOS), EBITDA à 19,26 % et ROS à 15,09 %.
+Positionnement & Marché : Leader mondial en volume Thermique (11,81 % de PDM globale, dont 16,50 % en Chine). En revanche, son offre Hybride est sous-calibrée en Europe (2,23 % de PDM).
+Opérations & Logistique : Stocks finaux nuls, mais des pertes de ventes colossales dues à une sous-estimation de la demande : 674 000 thermiques et 460 000 hybrides de demande non satisfaite en Europe, ainsi que 201 000 hybrides aux USA.
+Santé financière & RSE : Trésorerie confortable (33,22 Mrd USD), pas de dette, notation AAA. Très bon score ESG (3,24), notamment sur l'environnement (3,61).
+7. Vrooom Vroooom — Diversification technologique réussie et équilibre financier
+Performance financière : CA de 81,98 Mrd USD et résultat net de 16,91 Mrd USD. Très forte rentabilité : ROCE de 45,38 %, ROE de 37,53 % et ROS de 20,62 %. Cours de l'action à 163,20 USD.
+Positionnement & Marché : Stratégie multi-technologique payante : solide sur l'Hybride (13,03 % PDM mondiale) et bien positionné sur l'Électrique en Chine (22,67 % de PDM locale).
+Opérations & Logistique : Utilisation équilibrée entre fabrication interne et sous-traitance. Stock sous contrôle (3,08 Mrd USD concentré sur l'hybride et l'électrique en Chine).
+Santé financière & RSE : Trésorerie de 36,57 Mrd USD, ratio de fonds propres de 96,02 %, notation AAA. Effort R&D substantiel (recrutement massif d'ingénieurs porté à 22 000 personnes).
+8. POLRAMOS — Crise opérationnelle, d'inventaire et de liquidité majeure
+Performance financière : Situation critique. Perte nette annuelle abyssale de -12,22 Mrd USD, capitaux propres négatifs (-6,72 Mrd USD), effondrement du cours de l'action à 50,44 USD et notation dégradée à C.
+Causes de la crise :Surinvestissement R&D / Licences : 17,67 Mrd USD dépensés en R&D, dont 16,64 Mrd USD en achats de licences externes.
+Surproduction massive et mévente (Hydrogène / Électrique) : Stocks record de 79,19 Mrd USD (dont 882 255 hydrogènes aux USA et 1,18 million de VE en Chine invendus suite aux déboires de marché de l'hydrogène et à des prix inadaptés). Les frais de stockage s'élèvent à 1,16 Mrd USD.
+Politique de dividende déconnectée : Distribution de 41,44 Mrd USD de dividendes non financés par les flux réels.
+Liquidité : Recours forcé à un crédit court terme d'urgence de 109,56 Mrd USD pour combler le déficit de trésorerie (taux d'intérêt punitifs à 14-17 %). L'entreprise est au bord du défaut de paiement.
+9. Ça Roule — Stratégie de volume à bas prix mais marges sous pression
+Performance financière : 2e part de marché mondiale en volume (9,96 %) et CA de 75,19 Mrd USD. Cependant, le bénéfice net est plus modeste (11,54 Mrd USD) en raison d'une marge brute comprimée (marge directe de 26,35 % et ROS de 15,35 %).
+Positionnement & Marché : Prix de vente très agressifs (parmi les plus bas du marché en Thermique et Hybride), ce qui draine la demande mais pèse sur les marges unitaires.
+Opérations & Logistique : Stocks notables aux USA (198 791 thermiques) et en Chine, pour un total de 4,51 Mrd USD d'inventaire. Recours le plus élevé du secteur à la sous-traitance (17,82 Mrd USD).
+Santé financière & RSE : Dette LT de 5,90 Mrd USD, trésorerie de 32,91 Mr
+d USD, notation AA+. Retard critique sur les critères ESG : plus faible score environnemental du secteur (2,47), pénalisé par le refus des énergies renouvelables (-9 % sur la demande).
+10. BM2P - BMDoublePied — Modèle de niche défensif, repli sur les volumes
+Performance financière : Plus faible chiffre d'affaires des entreprises viables (49,22 Mrd USD), mais gestion saine dégageant 9,75 Mrd USD de bénéfice net avec un ROS respectable de 19,80 %.
+Positionnement & Marché : Plus faible part de marché globale (5,78 %). L'entreprise a abandonné le marché thermique aux USA et en Chine pour se concentrer sur l'Europe, tout en maintenant une petite activité VE en Chine (22,37 % PDM VE locale).
+Opérations & Logistique : Sous-utilisation des usines (53 % de capacité disponible aux USA, usines arrêtées en Chine au profit de la sous-traitance). Stocks résiduels de 2,40 Mrd USD en Chine.
+Santé financière & RSE : Bilan très solide (97,58 % de fonds propres, zéro dette, 33,69 Mrd USD de cash, notation AAA). Score ESG en bas de tableau (2,81).
+11. TABCHOUR AUTO — Distribution record de dividendes et optimisation logistique
+Performance financière : CA de 78,09 Mrd USD et bénéfice net de 13,02 Mrd USD (ROS 16,68 %, ROE 28,19 %). Le cours de l'action s'établit à 163,39 USD.
+Politique financière marquante : Versement d'un dividende massif de 35,00 Mrd USD aux actionnaires (rendement de l'action record à 13,18 %), tout en maintenant une trésorerie excédentaire confortable de 26,12 Mrd USD et une notation AAA.
+Opérations & Logistique : Zéro stock résiduel (0 USD). Toutefois, comme AURA et GT-Automobile, l'entreprise a subi d'importantes demandes insatisfaites en Europe (269 000 thermiques et 199 000 hybrides manqués).
+RSE & RH : Politique RH généreuse (salaires de 7 500 USD et formation à 6 000 USD/mois), résultant en un taux de démission quasi nul (0,1 %) et une productivité élevée (1,167).
+12. MO'THOR — Pari risqué et coûteux sur l'électrification massive
+Performance financière : Chiffre d'affaires élevé (84,59 Mrd USD), mais rentabilité très faible : plus bas ROS des entreprises rentables (10,53 %) et EBITDA de seulement 14,42 %. Bénéfice net limité à 8,91 Mrd USD et cours de l'action à 116,45 USD.
+Positionnement & Marché : Leader mondial absolu sur l'Électrique (49,40 % de PDM mondiale, dont 62,39 % en Europe). L'entreprise a en revanche presque délaissé l'hybride.
+Opérations & Logistique : Lourdeur industrielle et commerciale : 9,30 Mrd USD de publicité (très coûteux) et accumulation critique de stocks de VE en Chine (443 457 unités) valorisés à 17,02 Mrd USD au bilan consolidé.
+Santé financière & Risque : Tensions sur la trésorerie : le cash en Chine est tombé à 0 USD, déclenchant une dette court terme imprévue de 3,44 Mrd USD en sus de 6,40 Mrd USD de dette LT. Le levier financier commence à se dégrader et la notation est descendue à AA.
+
+
+
+
+
+
+
+
+
+
+
+
 TOUR 5 :
 
 Nouveau VÉHICULES À HYDROGÈNE
