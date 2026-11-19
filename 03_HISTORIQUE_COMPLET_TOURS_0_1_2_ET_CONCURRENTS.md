@@ -1,86 +1,63 @@
-# 📊 HISTORIQUE COMPLET DES TOURS 0, 1 & 2, CONDITIONS DE MARCHÉ ET PROFIL DES 12 ÉQUIPES (`ESYBIA2AS`)
+# 📊 HISTORIQUE EXACT DES TOURS 0, 1 & 2, CONDITIONS DE MARCHÉ ET PROFIL DES 12 ÉQUIPES (`ESYBIA2AS`)
 
-Ce fichier contient la mémoire factuelle complète de notre parcours dans l'**Univers 1 (`ESYBIA2AS`)** du Tour d'entraînement jusqu'à la fin du **Tour 2**, y compris **l'historique exact des Conditions de Marché de chaque tour et de toutes nos décisions passées**.
+Ce fichier contient l'historique **100 % vérifié** à partir de [`data/real_competition/raw_reports/live_decisionchecklist.json`](file:///c:/Users/len/OneDrive/Bureau/ceism/data/real_competition/raw_reports/live_decisionchecklist.json) (capturé à 31 secondes de la fin du Tour 2) et des rapports officiels [`manuels/Results for Univers 1, Tour 1.html`](file:///c:/Users/len/OneDrive/Bureau/ceism/manuels/Results%20for%20Univers%201,%20Tour%201.html) et [`manuels/Results for Univers 1, Tour 2.html`](file:///c:/Users/len/OneDrive/Bureau/ceism/manuels/Results%20for%20Univers%201,%20Tour%202.html).
 
 ---
 
-## 🌍 0. Historique des Conditions de Marché (Tour d'Essai ➔ Tour 1 ➔ Tour 2)
-
-> [!WARNING]
-> **Rappel pour l'Agent IA :** Les conditions de marché changent **à chaque tour** ! Voici comment elles ont évolué jusqu'ici pour que tu comprennes la dynamique du scénario d'Eric Astien et que tu compares avec les nouvelles **Conditions de marché du Tour 3** :
+## 🌍 0. Historique des Conditions de Marché (Tour 1 ➔ Tour 2)
 
 | Paramètre Macro / Marché | Tour 1 (`Période 1`) | Tour 2 (`Période 2`) | Ce qu'il faut vérifier en priorité au Tour 3 (`#/marketConditions`) |
 | :--- | :--- | :--- | :--- |
-| **Croissance Demande USA** | **`+3,0 %`** | **`+5,0 %`** (accélération) | Lire le nouveau % annoncé pour les USA au Tour 3. |
-| **Croissance Demande Chine** | **`+7,0 %`** | **`+8 % à +9 %`** (`8,5 %` retenu) | Lire le nouveau % annoncé pour la Chine au Tour 3. |
-| **Croissance Demande Europe** | **`+6,0 %`** | **`+3,0 %`** (ralentissement) | Lire le nouveau % annoncé pour l'Europe au Tour 3. |
-| **Technologies Actives** | **Thermique** (~96 %) + début **Hybride** (~4 % chez 3 équipes) | **Thermique** (~91 %) + **Hybride** en forte hausse (`7,2 %` USA, `8,6 %` Chine, `6,1 %` Europe) | Vérifier l'essor de l'**Hybride** et si la demande **Électrique** démarre au Tour 3 ! |
-| **Sous-traitance USA (Coût & Plafond)** | Coût = **`11 233 $`** (`12 383 $` avec comp. T2) / Plafond = **`350 k`** | **CHOC :** Coût bondit à **`13 694,3 $`** (plus cher que nos usines !) / Plafond réduit à **`225 k`** | Vérifier dans `Production -> Planning` si la sous-traitance USA reste hors de prix ou baisse. |
-| **Sous-traitance Chine (Coût & Plafond)** | Coût = **`11 292 $`** / Plafond = **`425 k`** | Thermique = **`10 792 $`** / Hybride = **`16 833 $`** / Plafond = **`510 k`** | Vérifier le nouveau plafond et coût de sous-traitance Chine (Thermique / Hybride / Électrique). |
+| **Croissance Demande USA** | **`+3,0 %`** | **`+5,0 %`** | Lire le nouveau % annoncé pour les USA au Tour 3. |
+| **Croissance Demande Chine** | **`+7,0 %`** | **`+8 % à +9 %`** (`8,0 %` saisi par `IronHorse`) | Lire le nouveau % annoncé pour la Chine au Tour 3. |
+| **Croissance Demande Europe** | **`+6,0 %`** | **`+3,0 %`** | Lire le nouveau % annoncé pour l'Europe au Tour 3. |
+| **Technologies Actives** | **Thermique** (~96 %) + début **Hybride** (~4 % chez 3 équipes) | **Thermique** (~91 %) + **Hybride** en forte hausse (11 équipes sur 12 vendent de l'Hybride au T2) | Vérifier la croissance Hybride et si l'**Électrique** démarre au Tour 3. |
+| **Sous-traitance USA (Coût & Plafond)** | Thermique = **`12 383 $`** (affiché avec comp. T2) / Plafond = **`350 k`** | **CHOC :** Thermique bondit à **`13 694,3 $`** / Hybride = **`18 197,3 $`** / Plafond réduit à **`225 k`** | Vérifier dans `Production -> Planning` les nouveaux coûts et plafonds USA. |
+| **Sous-traitance Chine (Coût & Plafond)** | Thermique = **`11 292 $`** / Plafond = **`425 k`** | Thermique = **`10 792 $`** / **Hybride = `17 014,6 $`** (contre `24 756 $ - 31 747 $` en interne !) / Plafond = **`450 k - 510 k`** | Vérifier le coût et le plafond de sous-traitance Chine pour l'Hybride au Tour 3 ! |
 | **Taux de Change (`EUR` & `RMB`)** | `1 EUR = 1,1750 USD`<br>`1 USD = 6,6250 RMB` | **Hausse de +5 % de l'Euro :** `1 EUR = 1,2338 USD`<br>`1 USD = 6,6250 RMB` | Vérifier l'évolution de l'Euro et du RMB au Tour 3. |
 | **Fiscalité (Impôt sur les sociétés)** | USA : `22 %` \| Chine : `25 %` \| Europe : `27 %` | **Baisse impôt Europe à `21 %` !** (USA : `22 %` \| Chine : `25 %`) | Vérifier si un taux d'impôt ou un droit de douane change au Tour 3. |
-| **Nouveaux Modules Débloqués** | Ouverture de **RH**, **R&D** et **Finance (Dette LT)** | Ouverture de **Production -> Achats (5 Fournisseurs ESG + boycott ONG de Singularités Quantiques)** et **Finance -> Transferts internes de trésorerie** | Vérifier si Dividendes / Rachat d'actions ou un nouveau module s'active au Tour 3 ! |
+| **Coût d'Achat / Vente d'une Usine** | USA : **`1 200 M$`** (`200 k` cap.)<br>Chine : **`1 050 M$`** (`250 k` cap.) | USA : Achat **`1 200 M$`** / Cession **`+1 080 M$`**<br>Chine : Achat **`1 050 M$`** | Délai de construction = 1 tour. |
+| **Modules Ouverts dans `Finance`** | Emprunt / Remboursement Dette à Long Terme uniquement | Dette à Long Terme + **Transferts internes (`USA → Chine (+), Chine → USA (-)` et `USA → Europe (+), Europe → USA (-)`)** *(Pas de dividendes ni rachats d'actions)* | Vérifier si Dividendes / Rachats d'actions s'ouvrent au Tour 3. |
 
 ---
 
-## 📝 0.bis Récapitulatif Exact de Nos Décisions Soumises (Tour 1 vs Tour 2)
+## 📝 0.bis Récapitulatif Exact à 100 % des Décisions Soumises par `IronHorse` (`live_decisionchecklist.json`)
 
-| Onglet / Paramètre | Notre Décision Tour 1 *(8e — 96 pts)* | Notre Décision Tour 2 *(1er — 140 pts)* | État Initial au Début du Tour 3 |
+Voici les valeurs **exactes** qui ont été enregistrées dans la colonne d'équipe **`IronHorse`** au Tour 1 et au Tour 2 (telles qu'extraites de `live_decisionchecklist.json` et vérifiées dans `Results for Univers 1, Tour 2.html`) :
+
+| Onglet / Paramètre | Décision `IronHorse` Tour 1 *(8e — 96 pts)* | Décision `IronHorse` Tour 2 *(1er — 140 pts)* | État Exact d'`IronHorse` au Début du Tour 3 |
 | :--- | :--- | :--- | :--- |
-| **Demande Thermique (USA / Chine / Eur)** | `8,5 %` / `9,5 %` / `8,5 %` (`2 580 k` prévus vs `2 209 k` vendus) | `8,5 %` / `9,2 %` / `8,5 %` (Ventes réelles : `659 k` US + `573 k` CN + `857 k` EU = **`2 089 k`**) | Marché Thermique bien calibré, **`0 k` stock** restant. |
-| **Demande Hybride (USA / Chine / Eur)** | `0 %` / `0 %` / `0 %` (Non commercialisé) | `9,5 %` / `10,0 %` / `15,0 %` (Ventes réelles : `68 k` US + `57 k` CN + `111 k` EU = **`236 k`**) | **`0 k` stock Hybride**, 3 équipements Hybrides débloqués pour le Tour 3. |
-| **Prod. Interne USA (8 usines = 1 600 k)** | `95 %` sur 7 usines (`1 330 k` net) | **`64,0 %` Thermique** (`979 k` net) + **`3,0 %` Hybride** (`45 k` net) *(bridé pour vider le stock T1)* | **8 usines USA disponibles** : à remonter à **`88 %–92 %`** au Tour 3 ! |
-| **Prod. Interne Chine (3 usines = 750 k)** | `95 %` sur 2 usines (`475 k` net) | **`90,0 %` Thermique** (`631 k` net) + `0 %` Hybride | **3 usines Chine disponibles** : à maintenir à **`90 %–94 %`** au Tour 3. |
-| **Sous-traitance (USA / Chine)** | `350 k` Therm. USA + `425 k` Therm. Chine (`775 k`) | **`0 k` USA** + **`0 k` Therm. Chine** + **`85 k` Hybride Chine** | Ajuster selon le besoin exact pour garder `0 k` stock. |
-| **Achats Usines (USA / Chine)** | `+1` usine USA (`600 M$`) + `+1` usine Chine (`475 M$`) | `0` usine USA + `0` usine Chine | Parc actuel : **8 usines USA + 3 usines Chine**. |
-| **Achats Fournisseurs ESG** | *(Fermé — 5 fournisseurs par défaut = `7 150 $`)* | **3 cochés :** `Composants Colossaux` + `Innovation Réinventée` + `Maîtres Matérialistes` (**`6 833,3 $`**) | `Singularités Quantiques` et `Fusions Dynamiques` décochés. |
-| **RH (Effectifs / Salaire / Formation)** | `5 000` ing. / `5 500 $` / `900 $` (Productivité `1,035`) | `5 000` ing. / **`5 600 $`** / **`1 000 $`** (**Productivité `1,085` #1 du jeu !**) | Départs volontaires réels au T2 = **`2,4 %`**. |
-| **R&D (Therm. / Hybride / Élec.)** | `120 000` Therm. / `1 130 000` Hybride (`100 %`) | **`200 000` Therm. / `550 000` Hybride / `500 000` Électrique (`100 %`)** | **Capacités au T3 :** `9` éq. Thermique, `3` éq. Hybride, `500k` j-h déjà acquis en Électrique. |
-| **Marketing Thermique (Prix & Éq.)** | US `20 500 $` (5 éq) \| CN `130 000 RMB` (6 éq) \| EU `23 000 €` (4 éq) | US **`20 500 $` (5 éq)** \| CN **`125 000 RMB` (6 éq)** \| EU **`22 000 €` (4 éq)** | Réduire les équipements Thermiques vers **`4 / 4 / 3`** ou **`4 / 5 / 3`** au T3 pour booster les marges. |
-| **Marketing Hybride (Prix & Éq.)** | *(Aucun)* | US **`32 800 $` (2 éq)** \| CN **`228 000 RMB` (2 éq)** \| EU **`34 200 €` (2 éq)** | **3e équipement Hybride** débloqué pour le Tour 3 ! |
-| **Finance (Dette LT & Transferts)** | Dette LT `0` \| Aucun transfert (`3 623 M$` découvert Chine) | **Dette LT `-4 000 M$`** \| **Transfert Europe -> USA `+6 000 M$`** \| **USA -> Chine `+5 000 M$`** | **`23 935 M$` de cash**, **`0` découvert**, seulement **`7 900 M$`** de dette LT restante ! |
+| **Croissance Marché saisie (US / CN / EU)** | `3,0 %` / `7,0 %` / `6,0 %` | **`5,0 %` / `8,0 %` / `3,0 %`** | À mettre à jour selon `Conditions de marché` du Tour 3. |
+| **PDM Estimées Thermique (US / CN / EU)** | `8,5 %` / `9,5 %` / `8,5 %` (Ventes réelles : `751k` / `582k` / `876k` = `2 209k`) | **`7,3 %` / `7,5 %` / `7,8 %`** (Ventes réelles : **`658 k` US + `574 k` CN + `838 k` EU = `2 070 k`**) | **`0 k` stock Thermique**, seulement `2 k` de demande insatisfaite en Europe. |
+| **PDM Estimées Hybride (US / CN / EU)** | `0 %` / `0 %` / `0 %` (Non vendu) | **`1,1 %` / `1,1 %` / `0,8 %`** (Ventes réelles : **`76 k` US + `66 k` CN + `133 k` EU = `275 k`**) | **`0 k` stock Hybride**, `33 k` de demande insatisfaite aux USA (`109 k` demandés pour `76 k` livrés). |
+| **Production Interne USA (8 usines = 1 600 k)** | `95,0 %` Thermique sur 7 usines (`1 330 k`) | **Ligne 1 (Thermique) = `64,0 %` (`1 024 k`)**<br>**Ligne 2 = `0,0 %` (vide)** | **8 usines USA disponibles (`1 600 k`)**. Comme le stock est à `0 k`, on peut remonter la Ligne 1 Thermique vers **`80 %–88 %`** ! |
+| **Production Interne Chine (3 usines = 750 k)** | `95,0 %` Thermique sur 2 usines (`475 k`) | **Ligne 1 (Thermique) = `90,0 %` (`675 k`)**<br>**Ligne 2 (Hybride) = `0,0 %` (`0 k` en interne)** | **3 usines Chine disponibles (`750 k`)**. Ligne 1 Thermique déjà à `90 %`. |
+| **Sous-traitance (USA & Chine)** | `350 k` Therm. USA + `425 k` Therm. Chine | **USA Ligne 1 & 2 = `0 k`**<br>**Chine Ligne 1 (Thermique) = `0 k`**<br>**Chine Ligne 2 (Hybride) = `275 k`** (à `17 014,6 $`/unité !) | Continuer à **sous-traiter l'Hybride en Chine** (`17 015 $` contre `24 756 $ - 31 747 $` en production interne !). |
+| **Investissements Usines (USA / Chine)** | `+1` usine USA (`1 200 M$`) + `+1` usine Chine (`1 050 M$`) | **`0` usine USA / `0` usine Chine** (Estimations T3/T4 = `2 390` / `2 500`) | **8 usines USA + 3 usines Chine** au Tour 3. |
+| **Achats (Fournisseurs actifs)** | *(Fermé — 5 fournisseurs par défaut)* | **3 cochés (`6 833,3 $`) :** `Maîtres Matérialistes` (Oui), `Composants Colossaux` (Oui), `Innovation Réinventée` (Oui).<br>**2 décochés :** `Singularités Quantiques` (Non), `Fusions Dynamiques` (Non). | **Attention :** 5 concurrents (`POLRAMOS`, `AURA`, `YANAUTO`, `GT-Auto`, `Vrooom`) n'ont coché que **`Composants Colossaux + Innovation Réinventée` (`6 000,0 $`, soit `-833,3 $/voiture`)** ! |
+| **RH (Effectifs / Salaire / Formation)** | `5 000` ing. \| Départs `2,9 %` \| Salaire `5 500 $` \| Formation `900 $` | **`5 000` ing. \| Départs prévus `2,5 %` (réels `1,9 %`) \| Salaire `5 800 $` \| Formation `1 500 $`** | **Productivité `1,085` (#1 absolu du jeu = `12 pts/12`)** pour seulement `628 M$` de coût RH ! |
+| **R&D (Jours-homme & Licences)** | **`120 000` Thermique / `1 130 000` Hybride / `0` Électrique** (`0` licence) | **`120 000` Thermique / `1 130 000` Hybride / `0` Électrique** (`0` licence) | **Capacités au Tour 3 :** **`7` équipements Thermiques**, **`4` équipements Hybrides**, et **`0` en Électrique** ! |
+| **Marketing Thermique (Prix / Éq / Pub)** | US `20 500 $` (5 éq, 700M$) \| CN `130 000 RMB` (6 éq, 400M$) \| EU `23 000 €` (4 éq, 500M$) | **US : `20 500 $` / `5` éq / `800 M$`**<br>**CN : `130 000 RMB` / `6` éq / `450 M$`**<br>**EU : `22 500 €` / `4` éq / `600 M$`** | Nos `5 / 6 / 4` équipements sont pile au niveau de la moyenne du marché (`5,4 / 5,9 / 4,8`) et ont permis de tout vendre (`0` stock). |
+| **Marketing Hybride (Prix / Éq / Pub)** | *(Non commercialisé)* | **US : `29 500 $` / `1` éq / `300 M$`**<br>**CN : `205 000 RMB` / `1` éq / `250 M$`**<br>**EU : `28 500 €` / `1` éq / `300 M$`** | Les `275 k` Hybrides ont été vendus à 100 % ! Au Tour 3, nous avons jusqu'à **`4` équipements Hybrides** débloqués. |
+| **Logistique (Priorités de livraison)** | USA : `1. USA, 2. Europe, 3. Chine`<br>Chine : `1. Chine, 2. Europe, 3. USA` | USA : **`1. USA, 2. Europe, 3. Chine`**<br>Chine : **`1. Chine, 2. Europe, 3. USA`** | *(Aucun prix de cession modifiable dans l'interface : transferts au coût).* |
+| **Finance (Dette LT & Transferts)** | Dette LT : `0` \| Transferts : *(Fermé)* | **Dette LT : `-4 000 000` k$ (`-4 000 M$`)**<br>**`USA → Chine (+)` : `+5 000 000` k$ (`+5 000 M$`)**<br>**`USA → Europe (+), Europe → USA (-)` : `-6 000 000` k$ (`-6 000 M$` rapatriés d'Europe vers USA !)** | **`23 935 M$` de trésorerie** (`7 602 M$` US, `7 033 M$` CN, `9 301 M$` EU), **`0 M$` découvert**, **`7 900 M$`** de dette LT restante. |
 
 ---
 
-## 🏁 1. Tour d'Entraînement (`Période Test` — Mercredi 13h00)
-- **Score officiel d'`IronHorse` (alors `Bleu`) :** **2e sur 12 avec `122 points`** (à 1 seul point du 1er `Jaune / Ça Roule` à `123 pts`, devant `Rose` `119 pts` et `Marron` `118 pts`).
-- **Ce qui avait fonctionné :**
-  - `0 k` stock (`7 pts/12`), `23 k` demande insatisfaite, productivité ingénieurs `1,0253` (`11 pts/12`), coûts moyens unitaires très bas (`12 296 $` US, `10 407 $` Asie #1 ex-aequo = `11 pts/12`, `11 742 $` Europe = `9 pts/12`), ROE `58,15 %`, Résultat net `8 751 M$`.
+## 🏆 1. Résumé de notre Parcours (Tour d'Essai ➔ Tour 1 ➔ Tour 2)
+
+1. **Tour d'Entraînement (`Période Test` — 13h00) :** **2e sur 12 avec `122 points`** (à 1 point du 1er `Jaune / Ça Roule` `123 pts`).
+2. **Tour 1 (`Période 1` — 16h19) :** **8e sur 12 avec `96 points`** (surproduction de `2 580 k` voitures pour `2 209 k` vendues ➔ `371 k` voitures invendues en stock et `3 623 M$` de découvert en Chine).
+3. **Tour 2 (`Période 2` — 17h15) :** **1er estimé de l'Univers 1 avec `140 points` !**
+   - **Résultat Net Annuel :** **`10 774 M$`** (**#1 ABSOLU sur les 12 équipes** — exactement conforme à la prévision de `10 775 465 k$` affichée dans `live_decisionchecklist.json` !).
+   - **Stocks Finaux :** **`0 k` voiture en stock** (`11 pts / 12` #1 ex-aequo avec `Ren'Auto`). Les `371 k` voitures en stock du Tour 1 ont été écoulées à 100 % ET les `275 k` Hybrides sous-traités en Chine ont été vendus à 100 % !
+   - **Découvert Bancaire :** **`0 M$` partout** grâce au transfert de `-6 000 M$` (`Europe → USA`) et `+5 000 M$` (`USA → Chine`).
+   - **Indépendance Financière (`Ratio des fonds propres`) :** **`74,66 %`** (`10 pts / 12`, notation de crédit **`AA-`**).
+   - **Productivité des Ingénieurs :** **`1,085`** (**#1 ABSOLU sur les 12 équipes = `12 pts / 12`**).
 
 ---
 
-## 📉 2. Tour 1 (`Période 1` — Mercredi 16h19) : L'Erreur et la Chute à la 8e Place (96 pts)
-- **Score officiel d'`IronHorse` (`Bleu`) :** **8e sur 12 avec `96 points`** (le 1er `Rose / Vrooom Vroooom` a fait `108 pts`, `Marron / TABCHOUR` 2e avec `106 pts`, `GT-Auto VI` 3e avec `105 pts`, `Orange / YANAUTO` 4e avec `104 pts`).
-- **Pourquoi nous avions chuté (la décision soumise par Yahya au Tour 1) :**
-  1. **Surenchère d'équipements (`5` USA / `6` Chine / `4` Europe) :** Nos coûts d'équipements ont explosé à **`7 525 M$`** (contre `4 076 M$` chez le 1er `Rose` qui avait mis `3 / 4 / 2` équipements !). Cela a écrasé nos marges opérationnelles (`6 pts` US, `4 pts` Asie, `6 pts` Europe).
-  2. **Prix trop hauts (`20 500 $ / 130 000 RMB / 23 000 €`) + Production maximale (`2 580 k` voitures) :** Nous n'avons vendu que `2 209 k` voitures (`751 k` USA + `582 k` Chine + `876 k` Europe). Il nous est resté **`371 k` voitures invendues en stock** (`53 k` aux USA + `318 k` en Chine) ➔ **`2 points sur 12` en Stocks** et **`4,41 milliards $`** de cash gelé !
-  3. **Découvert bancaire géant en Chine (`3 623 M$` / `2 758 M$` net au PDF) :** Les `318 k` voitures invendues en Chine ont vidé la trésorerie chinoise pendant que `8,49 Mds $` dormaient aux USA et `6,94 Mds $` en Europe ➔ chute de l'**Indépendance Financière à `4 points sur 12`**.
-  4. **Achat de +1 usine USA et +1 usine Chine :** Portant notre parc au Tour 2 à **8 usines USA (`1 600 k`)** et **3 usines Chine (`750 k`)**.
-
----
-
-## 🚀 3. Tour 2 (`Période 2` — Mercredi 17h15) : La Remontada Historique à la 1re Place (~140 pts)
-
-### Les Décisions Soumises par `IronHorse` au Tour 2 :
-- **Stratégie de déstockage total :** Coupure à **`0`** de toute la sous-traitance Thermique (qui venait de bondir à `13 694,3 $` aux USA !) et réduction de la production interne USA à `64 %` (`1 024 k` brut / `979 k` net) et Chine à `90 %` (`675 k` brut / `631 k` net) pour forcer la vente intégrale de nos **`371 k` voitures en stock**.
-- **Lancement ciblé de l'Hybride (grâce à la R&D Hybride du Tour 1) :** `43 k` Hybrides produits en interne aux USA + `85 k` sous-traités en Chine = `128 k` Hybrides vendus à `100 %` (`68 k` USA à `32 800 $`, `57 k` Chine à `228 000 RMB`, `111 k` Europe à `34 200 €`).
-- **Achats / Fournisseurs ESG :** Sélection des 3 fournisseurs optimaux (`Maîtres Matérialistes` + `Composants Colossaux` + `Innovation Réinventée`) et retrait de `Singularités Quantiques` (boycotté) et `Fusions Dynamiques` ➔ coût composants abaissé de `7 150 $` à **`6 833,3 $`**.
-- **RH & R&D :** `5 000` ingénieurs, salaire `5 600 $`, formation `1 000 $`, et **allocation de `100,0 %` des `1 250 000` jours-homme** (`200 000` Thermique, `550 000` Hybride, `500 000` Électrique) sans acheter de licence inutile.
-- **Finance :** Rapatriement de **`6 000 M$`** d'Europe vers les USA, transfert de **`5 000 M$`** des USA vers la Chine (effaçant 100 % du découvert chinois), et remboursement de **`-4 000 M$`** de dette à long terme.
-
-### Résultats Officiels du Tour 2 (`manuels/Results for Univers 1, Tour 2.html`) :
-- **Résultat Net Annuel :** **`10 774 M$`** (**#1 ABSOLU de l'Univers 1** sur les 12 équipes !).
-- **EBIT (Résultat Opérationnel) :** **`13 880 M$`** (`1 230 M$` USA + `1 897 M$` Chine + `10 753 M$` Europe).
-- **Stocks Finaux :** **`0 k` unité partout !** (`371 k` voitures du Tour 1 écoulées à 100 %, libérant `+4,41 milliards $` de cash).
-- **Découvert Bancaire :** **`0 M$` partout !** Trésorerie finale colossale de **`23 935 M$`** (`7 602 M$` USA + `7 033 M$` Chine + `9 301 M$` Europe) pour seulement `7 900 M$` de dette long terme restante !
-- **Ratio des Fonds Propres (Indépendance Financière) :** **`74,66 %`** (bond de +25 points de pourcentage ! Notation de crédit **`AA-`**).
-- **Productivité des Ingénieurs :** **`1,085`** (**#1 ABSOLU de l'Univers 1 = `12 points sur 12`**).
-
----
-
-## 📋 4. Tableau Complet des 15 Critères et Classement Estimé du Tour 2 (12 Équipes)
-
-Voici les valeurs exactes extraites de [`manuels/Results for Univers 1, Tour 2.html`](file:///c:/Users/len/OneDrive/Bureau/ceism/manuels/Results%20for%20Univers%201,%20Tour%202.html) et les points attribués par la formule officielle d'Eric Astien :
+## 📋 2. Tableau Complet des 15 Critères et Classement Estimé du Tour 2 (12 Équipes)
 
 | Critère (Points de 1 à 12) | `IronHorse` (1er) | `POLRAMOS` (2e) | `BM2P` (3e) | `Ça Roule` (4e) | `GT-Auto` (5e) | `YANAUTO` (6e) | `Ren'Auto` (7e) | `AURA` (8e) | `TABCHOUR` (9e) | `MO'THOR` (10e) | `tomobil` (11e) | `Vrooom` (12e) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -94,26 +71,10 @@ Voici les valeurs exactes extraites de [`manuels/Results for Univers 1, Tour 2.h
 | **8. PDM Asie (%)** | **9,39% (9p)** | 8,50% (6p) | 8,64% (7p) | 13,27% (12p) | 7,42% (4p) | 6,12% (3p) | 12,35% (11p) | 8,64% (8p) | 4,52% (2p) | 1,12% (1p) | 12,28% (10p) | 7,76% (5p) |
 | **9. PDM Europe (%)** | **10,22% (10p)** | 9,45% (7p) | 10,39% (11p) | 10,84% (12p) | 9,38% (6p) | 7,35% (4p) | 9,50% (8p) | 5,92% (3p) | 8,11% (5p) | 10,09% (9p) | 5,72% (2p) | 3,04% (1p) |
 | **10. Dem. Insat. (k)** | **35 k (7p)** | 0 k (8p) | 0 k (8p) | 335 k (5p) | 0 k (8p) | 0 k (8p) | 351 k (4p) | 118 k (6p) | 0 k (8p) | 466 k (3p) | 1 055 k (1p) | 917 k (2p) |
-| **11. Stocks (k)** | **0 k (11p)** | 322 k (8p) | 531 k (7p) | 10 k (10p) | 774 k (3p) | 837 k (2p) | 0 k (11p) | 557 k (6p) | 878 k (1p) | 772 k (4p) | 1 135 k (1p*) | 1 098 k (2p*) |
+| **11. Stocks (k)** | **0 k (11p)** | 322 k (8p) | 531 k (7p) | 10 k (10p) | 774 k (3p) | 837 k (2p) | 0 k (11p) | 627 k (6p) | 1 019 k (1p) | 243 k (9p) | 645 k (5p) | 738 k (4p) |
 | **12. Coût Unit. US** | **12 964$ (8p)** | 12 449$ (10p) | 13 200$ (7p) | 14 995$ (3p) | 14 182$ (6p) | 12 350$ (11p) | 15 377$ (1p) | 11 760$ (12p) | 15 041$ (2p) | 14 705$ (5p) | 15 199$ (2p*) | 12 873$ (9p) |
 | **13. Coût Unit. Asie** | **11 345$ (8p)** | 11 223$ (11p) | 11 575$ (6p) | 12 461$ (3p) | 11 229$ (10p) | 10 833$ (12p) | 14 680$ (1p) | 11 385$ (7p) | 14 017$ (2p) | 12 060$ (5p) | 12 349$ (4p) | 11 277$ (9p) |
 | **14. Coût Unit. Eur.** | **12 336$ (8p)** | 11 882$ (11p) | 13 131$ (7p) | 13 793$ (5p) | 12 177$ (10p) | 12 233$ (9p) | 14 701$ (4p) | 11 429$ (12p) | 14 708$ (3p) | 14 040$ (5p*) | 16 794$ (2p) | 17 174$ (1p) |
-| **15. Productivité** | **1,085 (12p)** | 1,042 (7p) | 1,047 (8p) | 1,033 (6p) | 1,032 (5p) | 1,013 (1p) | 1,060 (9p) | 1,069 (10p) | 1,019 (3p) | 1,080 (11p) | 1,026 (4p) | 1,080 (11p) |
+| **15. Productivité** | **1,085 (12p)** | 1,038 (7p) | 1,055 (8p) | 1,033 (6p) | 1,031 (5p) | 1,013 (1p) | 1,017 (2p) | 1,069 (10p) | 1,030 (3p) | 1,080 (11p) | 1,030 (3p) | 1,080 (11p) |
 | **TOTAL TOUR 2** | **🥇 140 pts** | **🥈 133 pts** | **🥉 109 pts** | **104 pts** | **104 pts** | **103 pts** | **98 pts** | **96 pts** | **90 pts** | **68 pts** | **57 pts** | **54 pts** |
 | **DÉCOUVERT (M$)** | **`0 M$`** | `0 M$` | `2 291 M$` | `0 M$` | `6 009 M$` | `10 098 M$` | `0 M$` | `3 814 M$` | `6 905 M$` | `5 200 M$` | `10 130 M$` | `9 765 M$` |
-
-*(Note : En cumulé Période 1 + Période 2, `IronHorse` totalise `96 + 140 = 236 pts`, devant `POLRAMOS` `84 + 133 = 217 pts`, `GT-Auto` `105 + 104 = 209 pts`, `Ça Roule` `103 + 104 = 207 pts`, `YANAUTO` `104 + 103 = 207 pts` !)*
-
----
-
-## 🔍 5. Profil Tactique des Principaux Concurrents pour le Tour 3
-
-1. **Notre Rival Direct n°1 : `POLRAMOS` (2e du Tour 2 avec 133 pts)**
-   - **Leur force :** Ils ont remboursé presque toute leur dette long terme (`1 000 M$` restants), ce qui leur donne **`95,32 %` d'Indépendance Financière (12 pts)**. Ils ont mis très peu d'équipements (`3 / 4 / 3` en Thermique), ce qui leur donne d'excellents coûts unitaires (`11 223 $ - 12 449 $`) et `10 529 M$` de résultat net.
-   - **Leurs faiblesses à exploiter au Tour 3 :**
-     - Ils n'ont que **7 usines USA et 2 usines Chine** (aucun achat d'usine au Tour 2, contre **8 usines USA et 3 usines Chine** pour nous !).
-     - Ils ont **`322 k` voitures invendues en stock en Chine**.
-     - Ils ont recruté **8 000 ingénieurs** mal payés (`5 200 $`), ce qui bloque leur productivité à `1,042` (`7 pts` contre `12 pts` pour nous) et leur coûte `861 M$` de R&D.
-2. **Les Équipes Étouffées par leurs Stocks Géants (> 750 k voitures en stock !) :**
-   - `tomobil` (`1 135 k` stock, `10 130 M$` découvert), `Vrooom Vroooom` (`1 098 k` stock, `9 765 M$` découvert), `TABCHOUR` (`878 k` stock, `6 905 M$` découvert), `YANAUTO` (`837 k` stock, `10 098 M$` découvert), `GT-Auto VI` (`774 k` stock, `6 009 M$` découvert), `MO'THOR` (`772 k` stock).
-   - **Conséquence pour le Tour 3 :** Ces 6 équipes vont être obligées soit de brader leurs prix, soit de couper massivement leur production au Tour 3 (ce qui fera exploser leur coût unitaire de production interne !), tandis que nous avons **`0` stock** et pouvons faire tourner nos 8 usines USA et 3 usines Chine à plein régime (**88 %–92 %**) !

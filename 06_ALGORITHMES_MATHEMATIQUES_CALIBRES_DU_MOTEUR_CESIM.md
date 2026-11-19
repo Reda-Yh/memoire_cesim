@@ -120,14 +120,18 @@ Les frais de gestion des stocks facturés dans chaque zone suivent la formule li
 
 ## 8. Algorithme des Coûts de Transport & Droits de Douane (`Logistique`) et Amortissements (`Bilan`)
 
-1. **Coût de Transport + Droits de Douane par voiture exportée :**
+1. **Coût de Transport + Droits de Douane par voiture exportée (Cessions internes au coût) :**
+   - **Important :** Dans l'interface de notre session (`tour2_logistics.json`), il n'y a **pas** de multiplicateur de prix de cession interne modifiable : toutes les ventes entre filiales se font automatiquement **au coût de fabrication**.
    - **Livraison domestique (`USA -> USA` et `Chine -> Chine`) :** **`0,0 $`** de transport et **`0,0 $`** de douane.
-   - **Exportation `Chine -> USA` (Hybride) :** **`~740 $ à 760 $` par voiture** (transport + tarif douanier).
+   - **Exportation `Chine -> USA` :** **`659,7 $`** en Thermique et **`~741,9 $`** en Hybride par voiture (transport + tarif douanier).
+   - **Exportation `USA -> Chine` :** **`3 685,7 $`** en Thermique (prohibitif : ne jamais exporter des USA vers la Chine !).
    - **Exportation vers l'`Europe` (`USA -> Europe` et `Chine -> Europe`) :**
-     $$\text{Coût Transport + Douane Europe} = \text{Fret fixe} + \text{Taux de douane} \times (\text{Coût de fabrication} \times \text{Multiplicateur Prix de Cession})$$
-     - Plus votre **multiplicateur de prix de cession interne** (`1,00` à `1,30`) et votre coût unitaire de fabrication sont élevés, plus les droits de douane payés à l'entrée en Europe augmentent (`1 590 $` chez `YANAUTO` à coût bas contre `2 254 $` en Thermique et `3 175 $` en Hybride chez `Ren'Auto` !).
-2. **Amortissement des Immobilisations (`Usines`) et Taux d'Intérêt (`Notation de Crédit`) :**
-   - **Amortissement annuel :** Exactement **`9,03 %`** de la valeur nette des immobilisations au bilan (`1 452 M$` pour 8 usines USA + 3 usines Chine valant `16 074 M$`).
+     - `Chine -> Europe` (Thermique) : **`1 639,0 $`** par voiture (pour `IronHorse` à `10 263,7 $` de coût de prod Chine).
+     - `USA -> Europe` (Thermique) : **`1 777,9 $`** par voiture.
+     - Comme le droit de douane européen est un `%` du coût de fabrication du véhicule exporté, plus votre coût unitaire de fabrication est bas (`6 000 $` de composants + usines à `82–90 %`), plus votre coût de douane à l'entrée en Europe baisse également !
+2. **Coût d'Acquisition / Cession des Usines, Amortissements (`Bilan`) et Taux d'Intérêt :**
+   - **Prix d'une usine :** **`1 200 M$`** aux USA (`200 k` capacité ; revente/cession = `+1 080 M$`) et **`1 050 M$`** en Chine (`250 k` capacité).
+   - **Amortissement annuel :** Exactement **`9,03 %`** de la valeur nette des immobilisations au bilan (`1 452 M$` au Tour 2 pour nos 8 usines USA + 3 usines Chine valant `16 074 M$`).
    - **Taux d'intérêt et Notation de Crédit (`AA-`, `A+`, `BBB`, `B-`) :** Déterminés directement par le **`Ratio des fonds propres` (`Indépendance financière`)** et le levier `Dette nette / Fonds propres`. À **`74,66 %`** de fonds propres (`AA-`), `IronHorse` bénéficie du taux plancher du jeu (**`4,2 %`** sur la dette long terme USA).
 
 
@@ -177,14 +181,18 @@ Les frais de gestion des stocks facturés dans chaque zone suivent la formule li
 
 ## 8. Algorithme des Coûts de Transport & Droits de Douane (`Logistique`) et Amortissements (`Bilan`)
 
-1. **Coût de Transport + Droits de Douane par voiture exportée :**
+1. **Coût de Transport + Droits de Douane par voiture exportée (Cessions internes au coût) :**
+   - **Important :** Dans l'interface de notre session (`tour2_logistics.json`), il n'y a **pas** de multiplicateur de prix de cession interne modifiable : toutes les ventes entre filiales se font automatiquement **au coût de fabrication**.
    - **Livraison domestique (`USA -> USA` et `Chine -> Chine`) :** **`0,0 $`** de transport et **`0,0 $`** de douane.
-   - **Exportation `Chine -> USA` (Hybride) :** **`~740 $ à 760 $` par voiture** (transport + tarif douanier).
+   - **Exportation `Chine -> USA` :** **`659,7 $`** en Thermique et **`~741,9 $`** en Hybride par voiture (transport + tarif douanier).
+   - **Exportation `USA -> Chine` :** **`3 685,7 $`** en Thermique (prohibitif : ne jamais exporter des USA vers la Chine !).
    - **Exportation vers l'`Europe` (`USA -> Europe` et `Chine -> Europe`) :**
-     $$\text{Coût Transport + Douane Europe} = \text{Fret fixe} + \text{Taux de douane} \times (\text{Coût de fabrication} \times \text{Multiplicateur Prix de Cession})$$
-     - Plus votre **multiplicateur de prix de cession interne** (`1,00` à `1,30`) et votre coût unitaire de fabrication sont élevés, plus les droits de douane payés à l'entrée en Europe augmentent (`1 590 $` chez `YANAUTO` à coût bas contre `2 254 $` en Thermique et `3 175 $` en Hybride chez `Ren'Auto` !).
-2. **Amortissement des Immobilisations (`Usines`) et Taux d'Intérêt (`Notation de Crédit`) :**
-   - **Amortissement annuel :** Exactement **`9,03 %`** de la valeur nette des immobilisations au bilan (`1 452 M$` pour 8 usines USA + 3 usines Chine valant `16 074 M$`).
+     - `Chine -> Europe` (Thermique) : **`1 639,0 $`** par voiture (pour `IronHorse` à `10 263,7 $` de coût de prod Chine).
+     - `USA -> Europe` (Thermique) : **`1 777,9 $`** par voiture.
+     - Comme le droit de douane européen est un `%` du coût de fabrication du véhicule exporté, plus votre coût unitaire de fabrication est bas (`6 000 $` de composants + usines à `82–90 %`), plus votre coût de douane à l'entrée en Europe baisse également !
+2. **Coût d'Acquisition / Cession des Usines, Amortissements (`Bilan`) et Taux d'Intérêt :**
+   - **Prix d'une usine :** **`1 200 M$`** aux USA (`200 k` capacité ; revente/cession = `+1 080 M$`) et **`1 050 M$`** en Chine (`250 k` capacité).
+   - **Amortissement annuel :** Exactement **`9,03 %`** de la valeur nette des immobilisations au bilan (`1 452 M$` au Tour 2 pour nos 8 usines USA + 3 usines Chine valant `16 074 M$`).
    - **Taux d'intérêt et Notation de Crédit (`AA-`, `A+`, `BBB`, `B-`) :** Déterminés directement par le **`Ratio des fonds propres` (`Indépendance financière`)** et le levier `Dette nette / Fonds propres`. À **`74,66 %`** de fonds propres (`AA-`), `IronHorse` bénéficie du taux plancher du jeu (**`4,2 %`** sur la dette long terme USA).
 
 

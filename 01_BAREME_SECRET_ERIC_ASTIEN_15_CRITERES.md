@@ -70,12 +70,15 @@ C'est **le secret numéro 1 du barème d'Eric Astien** :
 ### Piège n°3 : L'Allocation R&D à 100 % et la Productivité Ingénieurs (12 pts gratuits)
 - Le critère 15 (`Coefficient de productivité / Ingénieurs` = 12 pts) dépend de 3 leviers :
   1. **L'allocation de 100,0 % des Jours-homme disponibles dans l'onglet `R&D`** (`Nombre d'employés × 250 jours-homme`, soit `1 250 000` jours-homme pour `5 000` ingénieurs). Si une équipe oublie d'allouer 100 % (comme `YANAUTO` à 44,5 % au Tour 1 ou `AURA` à 88,4 %), sa productivité tombe à `1,013` (**1 point sur 12**).
-  2. **La stabilité des effectifs (`5 000` ingénieurs)** : les équipes qui recrutent brutalement +3 000 à +7 000 ingénieurs (`POLRAMOS` 8 000, `BM2P` 9 500, `MO'THOR` 12 000) subissent une dilution de productivité des nouveaux arrivants et paient jusqu'à `1 515 M$` de salaires R&D ! En restant à **`5 000` ingénieurs** bien payés (`5 600 $ -> 5 800 $`) et bien formés (`1 000 $ -> 1 100 $`), `IronHorse` a obtenu **`1,085` (#1 absolu du jeu = 12 pts/12)** pour seulement `583 M$` de coût RH !
+  2. **L'efficacité du coût RH (`5 000` ingénieurs à `5 800 $ / 1 500 $`) :**
+     - Recruter massivement (`Vrooom` 10 000 ingénieurs, `MO'THOR` 12 000 ingénieurs) ne fait pas chuter la productivité (`1,080` = 11 pts/12), mais leur coûte **`1 176 M$` à `1 388 M$`** en frais de R&D !
+     - En revanche, **licencier des ingénieurs** détruit la productivité (`Ren'Auto` a licencié `-494` ingénieurs au T2 : malgré `8 500 $` de salaire, sa productivité s'est effondrée de `1,054` à `1,017` !).
+     - En restant à **`5 000` ingénieurs** très bien payés (`5 800 $`) et très bien formés (`1 500 $`), `IronHorse` a obtenu **`1,085` (#1 absolu du jeu = 12 pts/12)** pour seulement **`628 M$`** de coût RH !
 
-### Piège n°4 : La Sur-enchère d'Équipements (`Coûts des équipements`) écrase les 36 Points de Marges Opérationnelles
-- Chaque équipement supplémentaire ajouté sur un modèle dans l'onglet `Marketing` multiplie le coût direct des équipements (`Coûts des équipements` dans le compte de résultat).
-- Au Tour 1, `Ren'Auto` a mis 10 équipements (`15 820 M$` de coûts d'équipements !) et Yahya avait mis `5/6/4` équipements (`7 525 M$` contre `4 076 M$` chez `Rose`).
-- **Règle d'or :** Ne jamais dépasser **`4 à 5` équipements en Thermique** et **`2 à 3` en Hybride** tant que le prix du marché ne le justifie pas. Cela protège les **36 points** des 3 Marges Opérationnelles (`US`, `Asie`, `Europe`) ET le `ROE` (12 pts).
+### Piège n°4 : L'Équilibre des Équipements (`Coûts des équipements`) et le Choix des Fournisseurs (`6 000 $` vs `6 833 $`)
+- Chaque équipement supplémentaire coûte exactement **`700 $` (USA), `650 $` (Chine), `750 $` (Europe)** par voiture vendue.
+- Au Tour 2, la moyenne du marché en Thermique était de **`5,4` équipements aux USA, `5,9` en Chine et `4,8` en Europe**. Nos **`5 / 6 / 4` équipements Thermiques** (et `1` en Hybride) nous ont permis d'être suffisamment attractifs pour tout vendre (`0 k` stock) sans tomber dans l'excès de `Ren'Auto` et `AURA` (`10` équipements = `11,7` à `19,9 milliards $` de coûts d'équipements !).
+- Surtout, sur les coûts directs, les 5 équipes qui n'ont coché que **2 fournisseurs** (`Composants Colossaux 5 250 $` + `Innovation Réinventée 6 750 $` = **`6 000,0 $`**) ont économisé **`-833,3 $/voiture`** par rapport à nos 3 fournisseurs (`6 833,3 $`), prenant les premières places sur les 3 critères de Coût Moyen Unitaire Pondéré.
 
 ### Piège n°5 : Les Stocks Invendus (`Stocks en volume` = 12 pts)
 - Avoir **`0 k` voiture en stock** en fin de tour rapporte **11 à 12 points sur 12** ET libère des milliards de dollars de cash (évitant tout découvert).
