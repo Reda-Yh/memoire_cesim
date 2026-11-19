@@ -75,6 +75,6 @@ port = int(lines[0])
 - `#/rd` : Recherche & Développement (Jours-homme + Licences)
 - `#/marketing/usa` | `#/marketing/china` | `#/marketing/europe` : Marketing par zone
 - `#/logistics` : Logistique & Prix de cession interne
-- `#/finance` : Finance (Dette LT, Dividendes, Rachats d'actions, Transferts internes de trésorerie)
+- `#/finance` : Finance (Emprunt / Remboursement Dette LT et Transferts internes de trésorerie)
 - `#/budgets/global` | `#/budgets/usa` | `#/budgets/china` | `#/budgets/europe` : Comptes de résultat et Bilans prévisionnels en temps réel
 - `#/decisionChecklist` : Liste de décisions (permet de comparer côte à côte les colonnes **`IronHorse`**, **`Reda Yahya`**, **`Yahya Bel Hajjam`**, **`Nour Doghmi`**, **`Mohamed Ajaji`** !)

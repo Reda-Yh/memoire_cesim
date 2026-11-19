@@ -69,12 +69,10 @@ Les équipes avaient des noms de couleurs au Tour d'essai et au début du Tour 1
 ## ⏰ 3. Calendrier Officiel des Tours (`ESYBIA2AS`)
 
 - **Tour d'entraînement 1** : Mercredi 18 nov. 13:00 *(Terminé — 2e avec 122 pts)*
-- **Tour 1** : Mercredi 18 nov. 16:19 *(Terminé — 8e avec 96 pts suite à la surproduction/équipements de Yahya)*
+- **Tour 1** : Mercredi 18 nov. 16:19 *(Terminé — 8e avec 96 pts à cause des `371 k` de stock [`2 pts`] et du découvert Chine [`4 pts` en Indépendance financière])*
 - **Tour 2** : Mercredi 18 nov. 17:15 *(Terminé — **1er estimé avec 140 pts et #1 Résultat Net 10 774 M$**)*
 - **Tour 3** : **Jeudi 19 nov. à 10:20**
-- **Tour 4** : **Jeudi 19 nov. à 11:25**
-- **Tour 5** : **Jeudi 19 nov. à 14:40**
-- *(Tours suivants selon le planning affiché dans l'onglet Accueil / Calendrier de Cesim)*
+- **Tours 4, 5 et suivants :** ⚠️ **Toujours vérifier l'heure exacte directement dans l'onglet `Planning` / pied de page de Cesim** (le planning du professeur indique `13h30` / `15h50` alors que certaines captures affichaient `11h25` / `14h40`). Se fier uniquement au compte à rebours affiché en haut à gauche sur Cesim !
 
 ---
 

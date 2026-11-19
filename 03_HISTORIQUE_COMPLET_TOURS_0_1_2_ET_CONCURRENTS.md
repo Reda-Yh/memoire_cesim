@@ -16,7 +16,7 @@ Ce fichier contient l'historique **100 % vérifié** à partir de [`data/real_co
 | **Sous-traitance Chine (Coût & Plafond)** | Thermique = **`11 292 $`** / Plafond = **`425 k`** | Thermique = **`10 792 $`** / **Hybride = `17 014,6 $`** (contre `24 756 $ - 31 747 $` en interne !) / Plafond = **`450 k - 510 k`** | Vérifier le coût et le plafond de sous-traitance Chine pour l'Hybride au Tour 3 ! |
 | **Taux de Change (`EUR` & `RMB`)** | `1 EUR = 1,1750 USD`<br>`1 USD = 6,6250 RMB` | **Hausse de +5 % de l'Euro :** `1 EUR = 1,2338 USD`<br>`1 USD = 6,6250 RMB` | Vérifier l'évolution de l'Euro et du RMB au Tour 3. |
 | **Fiscalité (Impôt sur les sociétés)** | USA : `22 %` \| Chine : `25 %` \| Europe : `27 %` | **Baisse impôt Europe à `21 %` !** (USA : `22 %` \| Chine : `25 %`) | Vérifier si un taux d'impôt ou un droit de douane change au Tour 3. |
-| **Coût d'Achat / Vente d'une Usine** | USA : **`1 200 M$`** (`200 k` cap.)<br>Chine : **`1 050 M$`** (`250 k` cap.) | USA : Achat **`1 200 M$`** / Cession **`+1 080 M$`**<br>Chine : Achat **`1 050 M$`** | Délai de construction = 1 tour. |
+| **Coût d'Achat / Vente d'une Usine** | USA : **`1 200 M$`** (`200 k` cap.)<br>Chine : **`1 050 M$`** (`250 k` cap.) | USA : Achat **`1 200 M$`** / Cession **`+1 080 M$`**<br>Chine : Achat **`1 050 M$`** | Délai de construction = **2 tours (`t+2`)** : payée en `t+1`, produit en `t+2`. |
 | **Modules Ouverts dans `Finance`** | Emprunt / Remboursement Dette à Long Terme uniquement | Dette à Long Terme + **Transferts internes (`USA → Chine (+), Chine → USA (-)` et `USA → Europe (+), Europe → USA (-)`)** *(Pas de dividendes ni rachats d'actions)* | Vérifier si Dividendes / Rachats d'actions s'ouvrent au Tour 3. |
 
 ---
@@ -47,7 +47,7 @@ Voici les valeurs **exactes** qui ont été enregistrées dans la colonne d'équ
 ## 🏆 1. Résumé de notre Parcours (Tour d'Essai ➔ Tour 1 ➔ Tour 2)
 
 1. **Tour d'Entraînement (`Période Test` — 13h00) :** **2e sur 12 avec `122 points`** (à 1 point du 1er `Jaune / Ça Roule` `123 pts`).
-2. **Tour 1 (`Période 1` — 16h19) :** **8e sur 12 avec `96 points`** (surproduction de `2 580 k` voitures pour `2 209 k` vendues ➔ `371 k` voitures invendues en stock et `3 623 M$` de découvert en Chine).
+2. **Tour 1 (`Période 1` — 16h19) :** **8e sur 12 avec `96 points`** — La chute s'explique par la **surproduction (`2 580 k` pour `2 209 k` vendus ➔ `371 k` voitures invendues en stock = `2 pts / 12`)** et le **découvert bancaire en Chine (`3 623 M$`, `4 pts / 12` en Indépendance Financière)** qui en a découlé. *(Les `5 / 6 / 4` équipements n'en étaient pas la cause : ils nous avaient même rapporté `11 pts / 12` sur la Part de marché Asie !)*
 3. **Tour 2 (`Période 2` — 17h15) :** **1er estimé de l'Univers 1 avec `140 points` !**
    - **Résultat Net Annuel :** **`10 774 M$`** (**#1 ABSOLU sur les 12 équipes** — exactement conforme à la prévision de `10 775 465 k$` affichée dans `live_decisionchecklist.json` !).
    - **Stocks Finaux :** **`0 k` voiture en stock** (`11 pts / 12` #1 ex-aequo avec `Ren'Auto`). Les `371 k` voitures en stock du Tour 1 ont été écoulées à 100 % ET les `275 k` Hybrides sous-traités en Chine ont été vendus à 100 % !

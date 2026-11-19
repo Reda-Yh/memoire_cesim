@@ -31,7 +31,7 @@ Ce document résume les règles exactes vérifiées sur l'interface live de `htt
   - **1 usine Chine** = **`250 k` unités** de capacité brute.
     - **Coût d'acquisition d'une usine Chine** = **`1 050 M$`** (`1 050 000 k USD`).
     - Au Tour 2 et au début du Tour 3, `IronHorse` possède **3 usines Chine** (`750 k` de capacité brute).
-  - **Délai de construction :** Toute usine achetée au Tour $t$ est payée au Tour $t$ mais n'entre en production qu'au **Tour $t+1$** (`Usines disponibles -> Tour suivant`).
+  - **Délai de construction (`t+2` — RÈGLE CRITIQUE) :** D'après les conditions de marché et le tableau `Nombre d'usines` (`Tour en cours / Tour suivant / Après le prochain tour`), toute usine achetée au **Tour $t$** est **payée au Tour $t+1$** et **n'entre en production que deux tours plus tard, au Tour $t+2$ (`Après le prochain tour`)** ! *(Exemple : les usines achetées par `Ren'Auto` au Tour 2 sont affichées sur la ligne `Après le prochain tour` = Tour 4, et non au Tour 3).*
 - **Loi du taux d'utilisation des usines (en Thermique) :**
   - Le coût de conversion minimal d'une usine Thermique se situe entre **`78 %` et `92 %` d'utilisation** (`~5 324 $ – 5 450 $` hors composants aux USA, `~3 412 $ – 3 450 $` hors composants en Chine).
   - **Attention au `100 %` :** À `100,0 %` d'utilisation, le moteur applique un surcoût d'heures supplémentaires de `+450 $` (Chine) à `+720 $` (USA) par voiture.

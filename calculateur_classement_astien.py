@@ -139,7 +139,15 @@ def main():
 
     roe = find_nth_row("Rentabilité des fonds propres (ROE)", 1)
     val_crea = find_nth_row("Création de valeur totale", 1)
-    indep = find_nth_row("Ratio des fonds propres", 1)
+    cap_propres = find_nth_row("Total des capitaux propres", 1)
+    total_passif = find_nth_row("Total Passif", 1)
+    dette_fourn = find_nth_row("Dette fournisseurs", 1)
+    indep = [
+        cap_propres[i] / (total_passif[i] - dette_fourn[i]) * 100.0
+        if (total_passif[i] - dette_fourn[i])
+        else 0.0
+        for i in range(12)
+    ]
     net_income = find_nth_row("Résultat net annuel", 1)
     decouvert = find_nth_row("Dettes à court terme (imprévues)", 1)
 

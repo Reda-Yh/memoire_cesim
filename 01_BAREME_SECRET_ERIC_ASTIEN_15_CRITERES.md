@@ -31,7 +31,7 @@ Voici les 15 lignes exactes du tableau de notation d'Eric Astien (chacune sur **
 | :-: | :--- | :---: | :---: | :--- |
 | **1** | **RENTABILITÉ FINANCIÈRE (ROE)** | $\uparrow$ Max | **12 pts** | Table `Ratios et indicateurs financiers` ➔ `Rentabilité des fonds propres (ROE)` *(ou Résultat Net / Capitaux Propres hors surcoût Achats au T1)* |
 | **2** | **CRÉATION DE VALEUR** | $\uparrow$ Max | **12 pts** | Table `Création de valeur` (tout en bas du rapport) ➔ **`Création de valeur totale`** *(Somme : Actionnaires + Créanciers + Personnel + Gouvernement + Fournisseurs)* |
-| **3** | **INDÉPENDANCE FINANCIÈRE** | $\uparrow$ Max | **12 pts** | Table `Ratios et indicateurs financiers` ➔ **`Ratio des fonds propres`** ($\frac{\text{Total Capitaux Propres}}{\text{Total Bilan}} \times 100$) |
+| **3** | **INDÉPENDANCE FINANCIÈRE** | $\uparrow$ Max | **12 pts** | Table `Bilan, global` ➔ $\frac{\text{Total des capitaux propres}}{\text{Total Passif} - \text{Dette fournisseurs}} \times 100$ *(vérifié sur les 12 équipes !)* |
 | **4** | **MARGE OPÉRATIONNELLE US (RO/CA)** | $\uparrow$ Max | **12 pts** | Table `Compte de résultat, USA` ➔ $\frac{\text{RÉSULTAT OPÉRATIONNEL (EBIT) USA}}{\text{Chiffre d'affaires total USA}} \times 100$ *(inclut les ventes + prix de transfert)* |
 | **5** | **MARGE OPÉRATIONNELLE ASIE** | $\uparrow$ Max | **12 pts** | Table `Compte de résultat, Chine` ➔ $\frac{\text{RÉSULTAT OPÉRATIONNEL (EBIT) Chine}}{\text{Chiffre d'affaires total Chine}} \times 100$ |
 | **6** | **MARGE OPÉRATIONNELLE EUROPE** | $\uparrow$ Max | **12 pts** | Table `Compte de résultat, Europe` ➔ $\frac{\text{RÉSULTAT OPÉRATIONNEL (EBIT) Europe}}{\text{Chiffre d'affaires Europe}} \times 100$ |
