@@ -1,7 +1,7 @@
 # 🛠️ OUTILS, SCRIPTS PYTHON & CONNEXION LIVE CHROME DEVTOOLS
 > **Navigation :** [Index Recherche](../INDEX_RECHERCHE_AGENT_IA.md) · [Index Maître](../00_INDEX_AGENT_IA.md) · [README](../README.md) · [Outils & Scripts](./README_OUTILS_ET_CHROME.md)
 
-Ce fichier documente les emplacements des fichiers officiels (`04_` à `10_`), les 3 scripts Python autonomes (**calculateur 21 critères**, **radar concurrence/ESG `t+2`**, **lecteur HTML universel**) et les routes Cesim en lecture seule.
+Ce fichier documente les emplacements des fichiers officiels (`04_` à `10_`), les 3 scripts Python autonomes (**calculateur 15/17/21/22 critères**, **radar concurrence/ESG `t+2`**, **lecteur HTML universel**) et les routes Cesim en lecture seule.
 
 ---
 
@@ -20,7 +20,7 @@ Ce fichier documente les emplacements des fichiers officiels (`04_` à `10_`), l
 
 ## 🧮 2. Calculateur Automatique Eric Astien (`calculateur_classement_astien.py`)
 
-Le script [`calculateur_classement_astien.py`](./calculateur_classement_astien.py) lit nativement les classeurs **`.xls` (BIFF8) ET `.html`** sans dépendance externe, détecte automatiquement le rapport au numéro de tour le plus élevé dans `04_rapports_tours/` et calcule les **15, 17 ou 21 critères** + le diagnostic ligne par ligne d'`IronHorse` :
+Le script [`calculateur_classement_astien.py`](./calculateur_classement_astien.py) lit nativement les classeurs **`.xls` (BIFF8) ET `.html`** sans dépendance externe, détecte automatiquement le rapport au numéro de tour le plus élevé dans `04_rapports_tours/` et calcule les **15, 17, 21 ou 22 critères** + le diagnostic ligne par ligne d'`IronHorse` :
 
 ```powershell
 python "c:\Users\len\OneDrive\Bureau\ceism\memoire_agent_cesim\03_outils_et_scripts\calculateur_classement_astien.py"
@@ -54,7 +54,32 @@ python "c:\Users\len\OneDrive\Bureau\ceism\memoire_agent_cesim\03_outils_et_scri
 
 ---
 
-## 🌐 5. Connexion Live Chrome (Strictement en LECTURE SEULE)
+## 📈 5. Calibrateur des Élasticités de Marché (`calibrateur_elasticites_marche.py`)
+
+Ce script exploite les 5 rapports XLS fermés (Tours 1 à 5) pour estimer empiriquement les élasticités du modèle d'attractivité Logit de Cesim ($\alpha$ prix, $\gamma$ publicité) par régression log-linéaire OLS (moindres carrés en Python standard sans dépendances) :
+
+```powershell
+python "c:\Users\len\OneDrive\Bureau\ceism\memoire_agent_cesim_corrige\03_outils_et_scripts\calibrateur_elasticites_marche.py"
+```
+
+---
+
+## 🎯 6. Optimiseur Décisionnel IronHorse (`optimiseur_decisions_tour.py`)
+
+Ce simulateur d'aide à la décision consultative résout :
+1. **L'optimisation des dividendes & TSR** : $DPS^* = \arg\max(Points_{TSR})$ sous contrainte stricte de liquidité ($Découvert = 0$ dans les 3 zones), avec calibrage PER sectoriel ($PER \approx 16$).
+2. **Le basculement industriel COP 32 (Tour 7)** : reconversion des usines USA et Chine vers Hybride/EV/Hydrogène et écoulement impératif du stock résiduel thermique ($Stock = 0$).
+
+```powershell
+# Simulation avec les paramètres financiers et capacitaires du Tour 6/7 :
+python "c:\Users\len\OneDrive\Bureau\ceism\memoire_agent_cesim_corrige\03_outils_et_scripts\optimiseur_decisions_tour.py" --tour 7 --cash-usa 20000 --cash-chine 15000 --cash-europe 9033 --actions 1621.9 --cours-precedent 163.57
+# Vérification des règles de fin de partie au Tour 9 ou 10 :
+python "c:\Users\len\OneDrive\Bureau\ceism\memoire_agent_cesim_corrige\03_outils_et_scripts\optimiseur_decisions_tour.py" --tour 9
+```
+
+---
+
+## 🌐 7. Connexion Live Chrome (Strictement en LECTURE SEULE)
 
 > [!WARNING]
 > **RÈGLE DE SÉCURITÉ STRICTE :** Toujours lire l'interface Cesim en **LECTURE SEULE**. **Ne JAMAIS cliquer sur enregistrer/soumettre ni modifier les décisions de l'équipe à la place de l'utilisateur**, sauf instruction explicite.

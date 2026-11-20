@@ -94,3 +94,12 @@ Ce document est la **table d'aiguillage unique** du dépôt : quel que soit l'ag
 - **Pages `Conditions de marché` / `Événements`** ➔ `06_conditions_marche_et_evenements/tour_0X_conditions_marche.html` et `tour_0X_evenements.html`.
 - **Classement PDF officiel du professeur** ➔ `07_classements_officiels/classement_officiel_tours_0_a_X_ESYBIA2AS.pdf`.
 - **Nouveaux messages / slides** ➔ `10_messages_prof/` ou `09_slides_cours/`.
+
+
+## MISE À JOUR TECHNIQUE — 19/11/2026
+- Calculateur actualisé : `03_outils_et_scripts/calculateur_classement_astien.py` prend en charge le barème T5+ à 22 critères, avec TSR calculé depuis le rapport courant et le rapport précédent.
+- Tests : `03_outils_et_scripts/tests/test_regression_cesim.py`.
+- Radar concurrentiel : `03_outils_et_scripts/analyseur_concurrence_et_decisions.py` conserve les équipements séparés par USA/Chine/Europe ; le score synthétique maximum reste uniquement indicatif.
+- Historique structuré : `02_historique_et_strategie/live_game_history.json` contient maintenant le résultat officiel T5 (145 points, cumul 647).
+- Source classement T5 : `07_classements_officiels/classement_complet_page_6_periode_5.png` (image de la page du classement complet fournie dans la conversation ; le PDF original correspondant n’est pas dans le dossier source).
+- Anomalie non résolue : T1 XLS = 98 points IronHorse, PDF officiel = 96. Ne pas masquer ni corriger sans preuve.

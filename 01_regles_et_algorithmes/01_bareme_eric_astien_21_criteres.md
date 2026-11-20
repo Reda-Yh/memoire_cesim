@@ -1,4 +1,4 @@
-# 🏆 LE BARÈME SECRET D'ERIC ASTIEN : ÉVOLUTION 15 ➔ 17 ➔ 21 CRITÈRES (TOUR 3+)
+# 🏆 LE BARÈME SECRET D'ERIC ASTIEN : ÉVOLUTION 15 ➔ 17 ➔ 21 ➔ 22 CRITÈRES (TOUR 5+)
 > **Navigation :** [Index Recherche](../INDEX_RECHERCHE_AGENT_IA.md) · [Index Maître](../00_INDEX_AGENT_IA.md) · [README](../README.md) · [Outils & Scripts](../03_outils_et_scripts/README_OUTILS_ET_CHROME.md)
 
 **Source officielle vérifiée :** [`classement_officiel_tours_0_a_3_ESYBIA2AS.pdf`](../07_classements_officiels/classement_officiel_tours_0_a_3_ESYBIA2AS.pdf) (Pages 1 à 4 : Période Test, Période 1, Période 2 et Période 3) + calcul exact validé sur [`tour_04_resultats_univers1.xls`](../04_rapports_tours/tour_04_resultats_univers1.xls).
@@ -6,9 +6,10 @@
 À mesure que le professeur débloque de nouveaux onglets dans la simulation, sa grille Excel s'élargit :
 - **Période Test & Période 1 :** **15 critères** (`180 pts` max théoriques ; `Découvert` était affiché en bas sans compter dans les points).
 - **Période 2 :** **17 critères** — ajout de **`DÉCOUVERT`** et **`SCORE DDRS FOURNISSEURS`**.
-- **Période 3 (et suivantes) :** **21 critères** — ajout des 4 piliers ESG notés : **`IMPACT ENVIRONNEMENTAL`**, **`IMPACT SOCIÉTAL`**, **`IMPACT GOUVERNANCE`** et **`CERTIFICATION`** (`0 / 2 / 4 / 6 pts`).
+- **Période 3–4 :** **21 critères** — ajout des 4 piliers ESG notés : **`IMPACT ENVIRONNEMENTAL`**, **`IMPACT SOCIÉTAL`**, **`IMPACT GOUVERNANCE`** et **`CERTIFICATION`** (`0 / 2 / 4 / 6 pts`).
+- **Période 5 (et suivantes, confirmé sur le PDF officiel P5 fourni) : 22 critères** — ajout de **`RENTABILITÉ DE L’ACTION`** (`1–12 pts`), calculée en TSR : `((cours_t - cours_t-1 + dividende_par_action) / cours_t-1) × 100`. Le dividende par action est `- ligne Dividendes (M USD) / actions sur le marché (millions)` dans le rapport Cesim.
 
-Le script [`calculateur_classement_astien.py`](../03_outils_et_scripts/calculateur_classement_astien.py) intègre automatiquement les **15, 17 ou 21 critères** selon le rapport `.xls` ou `.html` fourni (auto-détection `Tour 1 = 15`, `Tour 2 = 17`, `Tour 3+ = 21` ; vérifié à l'identique sur les Tours 2 et 3 du PDF officiel).
+Le script [`calculateur_classement_astien.py`](../03_outils_et_scripts/calculateur_classement_astien.py) intègre automatiquement les **15, 17, 21 ou 22 critères** selon le rapport `.xls` ou `.html` fourni (auto-détection `Tour 1 = 15`, `Tour 2 = 17`, `Tour 3+ = 21` ; vérifié à l'identique sur les Tours 2 et 3 du PDF officiel).
 
 ---
 
@@ -29,7 +30,7 @@ $$\text{Points de l'équipe } i = 1 + \text{Nombre d'équipes strictement moins 
 
 ---
 
-## 📋 2. Les 21 Critères Officiels (Tour 3+) & Correspondance Exacte `.xls / .html` Cesim
+## 📋 2. Les 21 Critères Officiels (Tour 3–4) et le 22e critère (Tour 5+) & Correspondance Exacte `.xls / .html` Cesim
 
 | # | Nom du Critère dans le PDF d'Eric Astien | Sens | Max / Barème | Ligne exacte dans le rapport Cesim (`tour_XX_resultats_univers1.xls` / `.html`) |
 | :-: | :--- | :---: | :---: | :--- |
@@ -54,6 +55,7 @@ $$\text{Points de l'équipe } i = 1 + \text{Nombre d'équipes strictement moins 
 | **19** | **IMPACT SOCIÉTAL** *(Nouveau T3+)* | $\uparrow$ Max | `1–12 pts` | Table `Rapport ESG` ➔ `Score final` ➔ **`Social (S)`** *(IronHorse #1 au T3 : `3,98 = 12 pts` !)* |
 | **20** | **IMPACT GOUVERNANCE** *(Nouveau T3+)* | $\uparrow$ Max | `1–12 pts` | Table `Rapport ESG` ➔ `Score final` ➔ **`Gouvernance (G)`** |
 | **21** | **CERTIFICATION** *(Nouveau T3+)* | Points fixes | **`0 / 2 / 4 / 6 pts`** | Table `Rapport ESG` ➔ `Certitications de développement durable` : `Pas de cert. = 0`, `Bronze (>=2,75) = 2`, **`Argent (>=3,25) = 4`**, **`Or (>=4,00) = 6`** |
+| **22** | **RENTABILITÉ DE L’ACTION** *(Nouveau T5+)* | ↑ Max | `1–12 pts` | `((Cours action fin T5 - cours fin T4 + dividende/action) / cours fin T4) × 100`; cours et dividendes depuis le rapport Cesim, actions en millions. Vérifié contre les 12 scores du classement officiel P5.
 
 ---
 

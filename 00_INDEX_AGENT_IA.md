@@ -77,7 +77,7 @@
 
 Pour toute recherche par **Tour**, **Mot-clé** ou **Nom de fichier**, consulter **[`INDEX_RECHERCHE_AGENT_IA.md`](./INDEX_RECHERCHE_AGENT_IA.md)** :
 - **`01_regles_et_algorithmes/`** : Barème 21 critères, règles complètes de chaque onglet (dont Impôts/PCI, Événements, Dividendes/Aug. Capital), formules mathématiques & paramètres Tour 5.
-- **`02_historique_et_strategie/`** : Historique T0–T4, autopsie T4, **Playbook Tour 5 (`15h50`) ➔ Tour 10**, [`live_game_history.json`](./02_historique_et_strategie/live_game_history.json).
+- **`02_historique_et_strategie/`** : Historique T0–T4, autopsie T4, **Playbook Tour 5 ➔ Tour 10**, [**Cartographie Concurrence & Plan de Bataille Tour 7**](./02_historique_et_strategie/03_cartographie_concurrence_et_plan_bataille_tour_7.md), [`live_game_history.json`](./02_historique_et_strategie/live_game_history.json).
 - **`03_outils_et_scripts/`** : `calculateur_classement_astien.py`, `analyseur_concurrence_et_decisions.py`, `lecteur_html_cesim.py`, routes hash Chrome.
 - **`04_rapports_tours/`** : `tour_01_resultats_univers1.xls` à `tour_04_resultats_univers1.xls`.
 - **`05_decisions_prises/`** : Snapshots HTML des décisions `IronHorse` (`tour_01` à `tour_04`).
@@ -112,3 +112,10 @@ Pour toute recherche par **Tour**, **Mot-clé** ou **Nom de fichier**, consulter
 - **14:30 :** **RENCONTRE FINALE** — Résultat, classement général, podium des challenges & débriefing.
 - **16:00 :** Début de l'**évaluation des pairs**.
 - **23:59 — DOSSIER QUESTIONNAIRE À RENDRE :** Modèle disponible dans le menu `document` (1 dossier par équipe à uploader sur la plateforme avant minuit).
+
+
+## Mise à jour après clôture T5 (19/11/2026)
+- Résultat officiel T5 : IronHorse 145 pts sur 22 critères, 2e du tour ; cumul 647 pts, rang général 1.
+- Classement général officiel T5 : IronHorse 647, Ren’Auto 638, GT-Auto VI 635, YANAUTO 624, Vrooom 628, TABCHOUR 601, Ça Roule 570, BM2P 557, AURA 553, POLRAMOS 540, tomobil 490, MO’THOR 450.
+- Le calculateur a été corrigé pour le 22e critère TSR. Tests de régression : voir `03_outils_et_scripts/tests/`.
+- Le Tour 6 est le prochain tour ; son résultat officiel n’est pas présent dans le dossier. Les décisions T6 sont un snapshot, pas un résultat.

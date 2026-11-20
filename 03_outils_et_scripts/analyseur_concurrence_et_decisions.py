@@ -83,31 +83,41 @@ def main():
                         stocks_by_tech[lbl][i] += row[i]
             break
 
-    # 3. Équipements proposés au dernier tour (max USA/Chine/Europe par technologie)
-    eq_by_tech = {
-        "Thermique": [0.0] * 12,
-        "Hybride": [0.0] * 12,
-        "Électrique": [0.0] * 12,
-        "Hydrogène": [0.0] * 12,
+    # 3. Équipements proposés : conserver les valeurs par région (ne pas masquer
+    # les différences avec un maximum USA/Chine/Europe).
+    technologies = ("Thermique", "Hybride", "Électrique", "Hydrogène")
+    regions = ("USA", "Chine", "Europe")
+    equipment_by_region = {
+        region: {tech: [None] * 12 for tech in technologies} for region in regions
     }
-    cur_tech = None
+    current_region = None
+    current_tech = None
     in_zone_results = False
     for line in lines:
-        if line.startswith("Résultats par zone"):
+        if line.startswith("Résultats par zone, "):
+            region_name = line.split(",", 1)[1].strip()
+            current_region = region_name if region_name in equipment_by_region else None
+            current_tech = None
             in_zone_results = True
-            cur_tech = None
             continue
         if in_zone_results:
             if line.startswith("Rapport RH"):
                 break
-            lbl = line.split("|")[0].strip() if "|" in line else line.strip()
-            if lbl in eq_by_tech:
-                cur_tech = lbl
-            elif lbl == "Nombre d'équipements proposés" and cur_tech:
-                row = parse_row(line)
-                for i in range(12):
-                    if row[i] > eq_by_tech[cur_tech][i]:
-                        eq_by_tech[cur_tech][i] = row[i]
+            label = line.split("|")[0].strip() if "|" in line else line.strip()
+            if label in technologies:
+                current_tech = label
+            elif label == "Nombre d'équipements proposés" and current_region and current_tech:
+                raw_values = parse_str_row(line)
+                equipment_by_region[current_region][current_tech] = [
+                    to_float(value) if value else None for value in raw_values
+                ]
+
+    # Valeur de synthèse = maximum régional, conservée uniquement pour compatibilité
+    # avec l'ancien radar ; les valeurs régionales détaillées sont imprimées ensuite.
+    eq_by_tech = {
+        tech: [max((equipment_by_region[r][tech][i] or 0) for r in regions) for i in range(12)]
+        for tech in technologies
+    }
     eq_therm = eq_by_tech["Thermique"]
     eq_hyb = eq_by_tech["Hybride"]
     eq_elec = eq_by_tech["Électrique"]
@@ -186,6 +196,15 @@ def main():
             f"{teams[i]:18s} | {u_t1:18s} | {u_t2:18s} | {st_str:18s} | "
             f"{eq_str:11s} | {fin_str:15s} | {', '.join(diag)}"
         )
+
+    print("\n=== ÉQUIPEMENTS PAR RÉGION (T/H/E/H2) ===")
+    print(f"{'Équipe':18s} | {'USA':15s} | {'Chine':15s} | {'Europe':15s}")
+    print("-" * 72)
+    for i in range(12):
+        def fmt_region(region):
+            vals = [equipment_by_region[region][tech][i] for tech in technologies]
+            return "/".join("—" if value is None else str(int(value)) for value in vals)
+        print(f"{teams[i]:18s} | {fmt_region('USA'):15s} | {fmt_region('Chine'):15s} | {fmt_region('Europe'):15s}")
 
     if any(env_score) or any(ddrs_qual):
         print("\n=== RADAR ESG, FOURNISSEURS (DDRS) & DETTE LT ===")

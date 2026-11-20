@@ -13,15 +13,15 @@
     "Nour Doghmi",
     "Yahya Bel Hajjam"
   ],
-  "grading_system": "21 criteres Eric Astien (1 + NB.SI sur 1-12 pts + Certification ESG 0/2/4/6 pts)",
+  "grading_system": "22 criteres depuis le Tour 5 : barème 21 critères antérieur + rentabilité de l’action (TSR)",
   "total_rounds": 10,
-  "last_official_pdf_round": 3,
-  "last_closed_round": 4,
-  "next_round": 5,
-  "next_deadline": "2026-11-19 15:50 CET",
+  "last_official_pdf_round": 5,
+  "last_closed_round": 5,
+  "next_round": 6,
+  "next_deadline": null,
   "general_rank_official_t3": 1,
   "general_points_official_t3": 374,
-  "general_points_estimated_t4": 502,
+  "general_points_estimated_t4": null,
   "logged_rounds": [
     {
       "round_name": "Periode Test",
@@ -105,6 +105,10 @@
       "round_name": "Tour 4",
       "round_number": 4,
       "criteria_count": 21,
+      "points": 128,
+      "cumulative_points": 502,
+      "round_rank": 7,
+      "general_rank": 1,
       "estimated_points": 128,
       "estimated_cumulative_points": 502,
       "estimated_round_rank": 7,
@@ -135,6 +139,30 @@
       "plants_usa": 8,
       "plants_china": 3,
       "notes": "0 dette LT (100% Indep. Fin. AAA), 0 decouvert, Argent (4/4 pts), Marge US redressee a +8.05% (8 pts via PCI=1.20). Points perdus sur Composants Colossaux (seule equipe sur 12 -> DDRS 5.67 = 1/7 pts et -6.1% demande), Recyclabilite abaissee (-1.5%), CO2/Eau non coches (-4.9%) et USA L1=38%."
+    },
+    {
+      "round_name": "Tour 5",
+      "round_number": 5,
+      "criteria_count": 22,
+      "points": 145,
+      "cumulative_points": 647,
+      "round_rank": 2,
+      "general_rank": 1,
+      "net_profit_m_usd": 16627,
+      "roe_pct": 31.33,
+      "value_creation_m_usd": 58035,
+      "independance_financiere_pct": 100.0,
+      "ending_stocks_k": 30.33,
+      "unfulfilled_demand_k": 71,
+      "overdraft_m_usd": 0,
+      "rd_productivity": 1.15067,
+      "ddrs_fournisseurs": 7.17,
+      "esg_env": 2.88,
+      "esg_soc": 2.94,
+      "esg_gov": 2.71,
+      "certification": "Bronze",
+      "shareholder_return_tsr_pct": 27.86,
+      "notes": "Résultat officiel P5 : 145 pts, 2e du tour, IronHorse reste 1er général avec 647 pts. Le TSR calculé à partir du cours T4/T5 et du dividende par action vaut 27,86 % et rapporte 7 pts."
     }
   ],
   "tour_5_context": {
@@ -348,5 +376,8 @@
       "video_1min_facultative": "2026-11-20 14:00",
       "questionnaire_equipe": "2026-11-20 23:59 (modele dans menu document)"
     }
-  }
+  },
+  "general_rank_official_t5": 1,
+  "general_points_official_t5": 647,
+  "round_5_source_note": "Classement officiel Période 5 fourni sous forme de page PDF/image (page 6 du classement complet). Le PDF présent dans 07_classements_officiels ne couvre que Périodes Test à 3."
 }

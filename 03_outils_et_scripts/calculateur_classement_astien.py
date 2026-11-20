@@ -277,7 +277,7 @@ def load_report_lines(path: str) -> list[str]:
 
 
 def to_float(s: str) -> float:
-    if not s:
+    if not s or not s.strip():
         return 0.0
     s = (
         s.replace(" ", "")
@@ -288,8 +288,8 @@ def to_float(s: str) -> float:
     )
     try:
         return float(s)
-    except ValueError:
-        return 0.0
+    except ValueError as exc:
+        raise ValueError(f"Valeur numérique non interprétable : {s!r}") from exc
 
 
 def score_higher_better(vals: list[float]) -> list[int]:
@@ -362,17 +362,60 @@ def detect_round_number(lines: list[str], target: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
+def find_previous_round_report(target: str, round_num: int) -> str | None:
+    """Trouve le rapport du tour précédent dans le même dossier, sans deviner un autre tour."""
+    if round_num <= 1:
+        return None
+    folder = os.path.dirname(os.path.abspath(target))
+    wanted = round_num - 1
+    candidates = glob.glob(os.path.join(folder, "*.xls")) + glob.glob(os.path.join(folder, "*.html")) + glob.glob(os.path.join(folder, "*.htm"))
+    for candidate in candidates:
+        m = re.search(r"tour[_\s,]*0*(\d+)", os.path.basename(candidate), re.IGNORECASE)
+        if m and int(m.group(1)) == wanted:
+            return candidate
+    return None
+
+
+def extract_labeled_values(lines: list[str], label_prefix: str, occurrence: int = 1) -> list[float]:
+    """Extrait une ligne de 12 équipes en exigeant une correspondance non ambiguë."""
+    matches = [line for line in lines if "|" in line and line.split("|")[0].strip().startswith(label_prefix)]
+    if len(matches) < occurrence:
+        raise ValueError(f"Ligne '{label_prefix}' occurrence {occurrence} introuvable (trouvées : {len(matches)}).")
+    if len(matches) > 1 and occurrence == 1 and label_prefix != "Dividendes":
+        raise ValueError(f"Ligne '{label_prefix}' ambiguë : {len(matches)} occurrences.")
+    values = [to_float(value.strip()) for value in matches[occurrence - 1].split("|")[1:13]]
+    if len(values) != 12:
+        raise ValueError(f"La ligne '{label_prefix}' ne contient pas 12 valeurs.")
+    return values
+
+
+def calculate_shareholder_return(current_lines: list[str], previous_lines: list[str]) -> list[float]:
+    """TSR (%) = (cours courant - cours précédent + dividende/action) / cours précédent."""
+    current_price = extract_labeled_values(current_lines, "Cours de l'action à la fin du tour")
+    previous_price = extract_labeled_values(previous_lines, "Cours de l'action à la fin du tour")
+    dividends_row = extract_labeled_values(current_lines, "Dividendes", occurrence=1)
+    shares = extract_labeled_values(current_lines, "Actions sur le marché à la fin du tour")
+    result = []
+    for idx, (now, before, dividend_cash, share_count) in enumerate(zip(current_price, previous_price, dividends_row, shares)):
+        if before <= 0 or share_count <= 0:
+            raise ValueError(f"Cours précédent ou nombre d'actions invalide pour la colonne {idx + 1}.")
+        # La ligne Dividendes est un flux négatif dans le compte de résultat (M USD).
+        dividend_per_share = -dividend_cash / share_count
+        result.append((now - before + dividend_per_share) / before * 100.0)
+    return result
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="Calculateur du classement Eric Astien (15, 17 ou 21 critères)."
+        description="Calculateur du classement Eric Astien (15, 17, 21 ou 22 critères)."
     )
     parser.add_argument("report", nargs="?", default=None, help="Chemin du rapport .xls ou .html")
     parser.add_argument(
         "--criteria",
         type=int,
-        choices=(15, 17, 21),
+        choices=(15, 17, 21, 22),
         default=None,
-        help="Forcer le nombre de critères (15, 17 ou 21).",
+        help="Forcer le nombre de critères (15, 17, 21 ou 22).",
     )
     args = parser.parse_args()
     target = resolve_report_path(args.report)
@@ -539,6 +582,8 @@ def main():
         criteria_mode = 15
     elif round_num == 2:
         criteria_mode = 17
+    elif round_num is not None and round_num >= 5:
+        criteria_mode = 22
     elif round_num is not None and round_num >= 3:
         criteria_mode = 21 if has_esg else (17 if (any(ddrs_fourn) or any(decouvert)) else 15)
     else:
@@ -578,9 +623,24 @@ def main():
         criteria.append(("Impact Gouvernance", gov_score, score_higher_better(gov_score), True))
         criteria.append(("Certification ESG", cert_pts, cert_pts, True))
 
-    totals = [sum(c[2][i] for c in criteria) for i in range(12)]
-    print(f"=== CLASSEMENT ESTIMÉ ({len(criteria)} CRITÈRES ERIC ASTIEN) — {os.path.basename(target)} ===")
-    ranking = sorted(range(12), key=lambda i: (-totals[i], decouvert[i]))
+    if criteria_mode >= 22:
+        previous_path = find_previous_round_report(target, round_num or 0)
+        if not previous_path:
+            raise SystemExit(
+                "Impossible de calculer le 22e critère : rapport du tour précédent introuvable. "
+                "Fournissez les deux rapports dans le même dossier."
+            )
+        previous_lines = load_report_lines(previous_path)
+        shareholder_return = calculate_shareholder_return(lines, previous_lines)
+        criteria.append(("Rentabilité de l'action / TSR (%)", shareholder_return,
+                         score_higher_better(shareholder_return), True))
+
+    totals = [sum(criterion[2][i] for criterion in criteria) for i in range(12)]
+    print(f"=== CLASSEMENT CALCULÉ ({len(criteria)} CRITÈRES ERIC ASTIEN) — {os.path.basename(target)} ===")
+    if criteria_mode >= 22:
+        print("Critère TSR calculé depuis les cours des deux tours et les dividendes par action.")
+    print("Attention : les ex æquo sont conservés dans le score ; l’ordre affiché entre ex æquo n’est pas un départage officiel.")
+    ranking = sorted(range(12), key=lambda i: -totals[i])
     for rank, idx in enumerate(ranking, 1):
         print(
             f"#{rank:2d} | {teams[idx]:12s} | {totals[idx]:3d} pts "
